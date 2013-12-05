@@ -4,31 +4,34 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
 <script> 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
+$(function() {
+  $("li[id]").hide();
+  $("ul li a").click(function() { 
+      $(this).parent().next().toggle("slow").siblings("[id]").hide("fast");
   });
 });
+
 </script>
 <style>
 
-#panel,#flip
+.navigation
 {
 padding:5px;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color: #FFFFFF;
 text-align:center;
 background-color:#8DC3E9;
 border:solid 1px #c3c3c3;
 }
-#panel
+h2
 {
-background-color: #FFFFFF;
+color: #FFFFFF;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-padding:20px;
-display:none;
+font-size:16px;
 }
 
 h1{
+font-size:18px;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 background-color: #4C88BE;
 color: #FFFFFF;
@@ -49,19 +52,35 @@ margin-right:auto;
 
 <IMG class="displayed" src="Search.jpg" alt="Search"><br>
 
-<div id="flip">Tutorials</div>
-<div id="panel"> Section one: Introduction to Java </div>
+<ul class="navigation">
+    <li><a name="tutorials" title="tutorial"><h2>Tutorials</h2></a></li>
+    <li id="tutorials">Section One:Introduction to Java</li>
+    <li><a name="examples" title="Examples"><h2>Examples</h2></a></li>
+    <li id="examples"> Example One: Printing to the screen</li>
+    <li><a name="quiz" title="quiz"><h2>Quiz Yourself</h2></a></li>
+    <li id="quiz"> Find the Errors<br>
+		   What is the expected outpt</li>
+    <li><a name="options" title=options"><h2>Options</h2></a></li>
+    <li id="options">Sound:
+<form action="">
+<input type="radio" name="sound" value="On">On
+<input type="radio" name="sound" value="Off">Off
+</form>
+		  Vibration:<form action="">
+<input type="radio" name="vibes" value="On">On
+<input type="radio" name="vibes" value="Off">Off
+</form>
+	
+		  Text Size:
+<form action="">
+<input type="radio" name="text" value="Small">Small
+<input type="radio" name="text" value="Medium">Medium
+<input type="radio" name="text" value="Large">Large
 
-<div id="flip">Examples</div>
-<div id="panel"> Example one: Printing to the screen </div>
-
-<div id="flip">Quiz Yourself</div>
-<div id="panel"> Section one: Introduction to Java </div>
-<div id="flip">Options</div>
-<div id="panel"> Section one: Introduction to Java </div>
-<div id="flip">About</div>
-<div id="panel"> Copyright: Leah Buchanan 2013 </div>
-
+</form>
+	</li>
+    <li><a name="about" title="about"><h2>About this app<h2></a></li>
+</ul>
 
 
 
