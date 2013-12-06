@@ -66,6 +66,7 @@ margin-right:auto;
 height: 28px;
    padding: 20px 55px;
 }
+
 #search input[type="text"] {
 
 background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
@@ -92,6 +93,17 @@ background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
 
     width: 200px;
     }
+ul{
+list-style:none;
+margin:0;padding:0;
+}
+ul li{
+font-size:18px;
+margin:0;padding:0;
+line-height:30px;
+border-bottom:solid 2px #d3d3d3;
+
+}
 </style>
 
 
@@ -104,35 +116,49 @@ background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
 
 <ul class="navigation">
     <li class="menu"><a name="tutorials" title="tutorial"><h2>Tutorials</h2></a></li>
-    <li class= "content" id="tutorials">Section One:Introduction to Java<br>
-	 Section Two:Variables<br>
-		       Section Three:Strings<br>
-		       Section Four:Loops<br>
-
-</li>
+    <li class= "content" id="tutorials">
+    <ul>
+    <li>Section One:Introduction to Java</li>
+    <li> Section Two:Variables</li>
+    <li>Section Three:Strings</li>
+    <li>Section Four:Loops</li>
+    </ul>
+    </li>
     <li class="menu"><a name="examples" title="Examples"><h2>Examples</h2></a></li>
-    <li class= "content" id="examples"> Example One: Printing to the screen</li>
+    <li class= "content" id="examples">
+    <ul>
+    <li> Example One: Printing to the screen</li>
+    <li> Example Two: Using and Declaring variables</li>
+    <li> Example Three: Loops</li>
+    </ul>
+    </li>
     <li class="menu"><a name="quiz" title="quiz"><h2>Quiz Yourself</h2></a></li>
-    <li  class= "content" id="quiz"> Find the Errors<br>
-		   What is the expected outpt</li>
+    <li  class= "content" id="quiz"> 
+    <ul>
+    <li>Find the Errors</li>
+    <li>What is the expected output</li>
+    </ul>
+    </li>
     <li class="menu"><a name="options" title=options"><h2>Options</h2></a></li>
-    <li class= "content" id="options">Sound:
+    <li class= "content" id="options">
+    <ul>
+    <li>Sound:
 <form action="">
 <input type="radio" name="sound" value="On">On
 <input type="radio" name="sound" value="Off">Off
-</form>
-		  Vibration:<form action="">
+</form></li>
+		<li>  Vibration:<form action="">
 <input type="radio" name="vibes" value="On">On
 <input type="radio" name="vibes" value="Off">Off
-</form>
+</form></li>
 	
-		  Text Size:
+		  <li>Text Size:
 <form action="">
 <input type="radio" name="text" value="Small">Small
 <input type="radio" name="text" value="Medium">Medium
 <input type="radio" name="text" value="Large">Large
 
-</form>
+</form></li> </ul>
 	</li>
     <li class="menu"><a name="about" title="about"><h2>About this app<h2></a></li>
 </ul>
