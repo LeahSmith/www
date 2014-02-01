@@ -29,12 +29,12 @@
             
             <div>
                 <label for="source">Source Code:</label>
-                <textarea cols="20" rows="10" name="source" id="source"></textarea>
+                <textarea cols="35" rows="10" name="source" id="source"></textarea>
             </div>
             
             <div>
                 <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
-                <textarea cols="20" rows="3" name="input" id="input"></textarea>
+                <textarea cols="35" rows="3" name="input" id="input"></textarea>
             </div>
 
             <div>
