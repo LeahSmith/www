@@ -33,14 +33,12 @@
             
             <div>
                 <label for="source">Source Code:</label>
-                <textarea cols="35" rows="10" name="source" id="source" >
-				class TryMe{
-				public static void main(String args[]){
+                <textarea cols="35" rows="10" name="source" id="source" >class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;}&#13;&#10;}
 				
 				
-				}
 				
-				}</textarea>
+				
+				</textarea>
             </div>
             
             <div>
@@ -62,7 +60,9 @@
 <div id="container">
  <div id="content"></div>
 </div>
-<div id="footer">Home</div>
+<div id="footer"><a href="index.html">Home</a><br>
+ Written by: Leah Buchanan -10315935 NUIM <br> Using <a href="http://ideone.com">Ideone API</a> &copy;
+by <a href="http://sphere-research.com">Sphere Research Labs</a></div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="script.js"></script>
