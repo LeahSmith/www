@@ -17,7 +17,7 @@
 <li>It is an object-orientated language</li>
 <li>Platform-independent because of the JVM<br>
  “write once, run anywhere”</li>
-</ul>
+</ul2>
 <div id="wrapper">
         <h1><a href="Intro.php">Online Compiler</a></h1>
         <form id="code" action="#" method="post">
