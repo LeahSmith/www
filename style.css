@@ -1,8 +1,9 @@
 #wrapper {
+	float: left;
     margin: 10px auto 10px auto;
-    width: 800px;
+    width: 400px;
     background: #fff;
-    padding: 20px;
+    padding: 5px;
     border: 1px solid #ccc;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -130,5 +131,35 @@ body > #container { height: auto; min-height: 100%; }
  margin-top: -3em;
 }
 #content { padding-bottom: 3em; }
+label{
+    display: block;
+    margin: 0px 0 5px 0;
+    cursor: pointer;
+}
+input, select, textarea {
+    
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 150px;
+}
+
+.loading {
+    background: url('ajax-loader.gif') no-repeat;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+}
+
+#response {
+    margin: 20px 0 0 0;
+    border: 2px solid orange;
+    padding: 10px;
+    display: none;
+}
 
 

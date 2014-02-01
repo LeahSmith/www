@@ -19,7 +19,7 @@
  “write once, run anywhere”</li>
 </ul2>
 <div id="wrapper">
-        <h1><a href="Intro.php">Online Compiler</a></h1>
+        <h1><a href="Intro.php">Try it here</a></h1>
         <form id="code" action="#" method="post">
             <div>
                 <label for="lang">Select Language:</label>
@@ -29,12 +29,12 @@
             
             <div>
                 <label for="source">Source Code:</label>
-                <textarea cols="40" rows="10" name="source" id="source"></textarea>
+                <textarea cols="20" rows="10" name="source" id="source"></textarea>
             </div>
             
             <div>
                 <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
-                <textarea cols="40" rows="3" name="input" id="input"></textarea>
+                <textarea cols="20" rows="3" name="input" id="input"></textarea>
             </div>
 
             <div>
