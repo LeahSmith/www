@@ -13,10 +13,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
+    
 }
 body {
     line-height: 1;
+	
 }
 ol, ul {
     list-style: none;
@@ -95,8 +96,8 @@ body {
 #wrapper {
     
     width: 370px;
-    background: #fff;
-    padding: 20px;
+    background: #f8f8f8;
+    padding: 10px;
     border: 1px solid #ccc;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
