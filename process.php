@@ -7,6 +7,7 @@ $code = '';
 $input = '';
 $run = true;
 $private = false;
+$lang = 1;
 
 $subStatus = array(
     0 => 'Success',

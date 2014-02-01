@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
 
-<h3>Section One: Introduction to Java</h3>
+<h3>Section One: Introduction to Java</h3><br>
 
 <p1>What is Java?</p1>
 <ul2>
 <li>Java is a programming language</li>
-<li>Java can be used to write<br>
-	-Applications<br>
-	-Applets</li>
+<li>Java can be used to write:<br>
+	&nbsp&nbsp&nbsp&nbsp-Applications<br>
+	&nbsp&nbsp&nbsp&nbsp-Applets</li>
 <li>It is a relatively simple language to understand</li>
 <li>It is an object-orientated language</li>
 <li>Platform-independent because of the JVM<br>
@@ -22,8 +22,12 @@
         <h1><a href="Intro.php">Try it here</a></h1>
         <form id="code" action="#" method="post">
             <div>
-                <label for="lang">Select Language:</label>
-                <select name="lang" id="lang >                   <option value="1" selected="selected">Java </option>
+                <label for="lang">Language:</label>
+                <select name="lang" id="lang >                   
+		        
+				<option value="2">C++(gcc-4.5.1)</option>
+				<option value="1" selected="selected">Java</option>
+				<<option value="3">C++0x (gcc-4.5.1)</option>
                                     </select>
             </div>
             
