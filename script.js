@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         
         $.ajax({
             type: 'post',
-            url: 'http://leahsmuchanan.yzi.me/process.php',
+            url: 'https://github.com/LeahSmith/www/blob/master/process.php',
             dataType: 'json',
             data: data + '&process=1',
             cache: false,

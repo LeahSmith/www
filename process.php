@@ -3,7 +3,7 @@ error_reporting(0);
 
 $user = 'LeahSmuchanan';
 $pass = 'hoover123';
-$lang = '10';
+$lang = 10;
 $code = '';
 $input = '';
 $run = true;
