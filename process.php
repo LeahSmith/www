@@ -31,7 +31,6 @@ $error = array(
 //print_r( $_POST ); exit;
 
 if ( isset( $_POST['process'] ) && $_POST['process'] == 1 ) {
-    
     $input = trim( $_POST['input'] );
     $code = trim( $_POST['source'] );
 
