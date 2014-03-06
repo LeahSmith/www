@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script> 
+$(function() {
+  $("li[id]").hide();
+  $("ul li a").click(function() { 
+      $(this).parent().next().toggle("slow").siblings("[id]").hide("fast");
+  });
+});
+</script>
+<h3> Quiz Yourself </h3>
+</head>
+<p1> Here you can test yourself on the Java you have learnt in the tutorials as well as practicing exam style questions</p1>
+<body>
+<ul class="navigation">
+<li class="menu"><a name="basics" title="basics"><h2>Java Basics Quiz: Multiple Choice</h2></a></li>
+    <li class= "content" id="basics">
+    <ul>
+    <li><a href="trueOrfalse.html">Take Quiz</a></li>
+    </ul>
+    </li>
+    <li class="menu"><a name="output" title="output"><h2>What is the expected output of the following program?</h2></a></li>
+    <li class= "content" id="output">
+    <ul>
+    <li><a href="Intro.html">Question One</a></li>
+    <li><a href="Variables.php"> Question Two</a></li>
+    <li>Question Three</li>
+    <li>Question Four</li>
+    </ul>
+    </li>
+    <li class="menu"><a name="errors" title="Find the errors in the code"><h2>Find the errors in the code</h2></a></li>
+    <li class= "content" id="examples">
+    <ul>
+    <li> Question One</li>
+    <li> Question Two</li>
+    <li> Question Three</li>
+    </ul>
+	</li>
+	<li class="menu"><a name="tutorials" title="tutorial"><h2>Complete the code</h2></a></li>
+    <li class= "content" id="tutorials">
+    <ul>
+    <li><a href="Intro.html">Question One</a></li>
+    <li><a href="Variables.php"> Question Two</a></li>
+    <li>Question Three</li>
+    <li>Question Four</li>
+    </ul>
+    </li>
+	
+	
+	</body>
+</html>
