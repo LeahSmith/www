@@ -7,8 +7,7 @@
 <script src="script.js"></script>
 <script>
    var lineObjOffsetTop = 2;
-   
-   function createTextAreaWithLines(id)
+    function createTextAreaWithLines(id)
    {
       var el = document.createElement('DIV');
       var ta = document.getElementById(id);
@@ -111,8 +110,7 @@
  <div id="content">
  </div>
 </div>
-<br>
-<br>
+
 <p>When we consider a Java program it can be defined as a collection of objects that communicate via invoking each other's methods.
  Let us now briefly look into what do class, object, methods and instance variables mean.</p>
  <li><strong>Object</strong> - Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class</li>
@@ -120,7 +118,7 @@
 <li><strong>Methods</strong> - A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, 
 data is manipulated and all the actions are executed.</li>
 <li><strong>Instance Variables</strong> - Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</li>
-<br><br><br>
+<br>
 <p1>Basic Syntax</p1>
 <p> Java is case-sensitive. main(), Main(), and MAIN() would all be different methods.<br>
 There are a limited number of reserved words that have a special meaning within Java. You cannot use these words for your own variables or methods.<br>
@@ -152,26 +150,20 @@ Names may contain alphabetic characters, numeric characters, currency characters
 
 The diagram below illustrates how blocks of code can be nested<br></p>
 <img src="blockofcode.gif" alt="code">
-
+<br>
+<br>
 <p1> Comments</p1>
 <p>A comment:<br>
 
 <li>Is additional, non-executable text in a program used to document code.</li>
 <li>May also be used to temporarily disable a section of code (for debugging).</li>
-Block Comments may aslo be used for larger pieces of text.<br>
--Block comments are preceded by /* and followed by */.
-<div>
-                <label for="source">Example of a block of comments:</label>
-                <textarea id="codeTextarea" cols="50" rows="5" name="source" id="source" >/*This is a block comment&#13;&#10;It can be one or more lines long*/&#13;&#10;class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;}&#13;&#10;}
-				
-				</textarea>
-				<script type="text/javascript">
-   createTextAreaWithLines('codeTextarea');
-   </script>
-            </div>
+<li>Block Comments may aslo be used for larger pieces of text-Block comments are preceded by /* and followed by */.</li>
+<li>Single line comments are denoted with // and must appear at the end of a line.</li>
+<br>
+			
 <ul id="navigation">
 <li class="left"><a href="index.html">Back</a></li>
-<li class="right"><a href="variables.html">Next</a></li>
+<li class="right"><a href="variables.html">Variables</a></li>
 </ul>
 <br>
 <br>
