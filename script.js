@@ -12,8 +12,7 @@ jQuery(document).ready(function($) {
         
         $.ajax({
             type: 'post',
-            url: 'http://leahsmuchanan.yzi.me/process.php
-			',
+            url: 'http://leahsmuchanan.yzi.me/process.php',
             dataType: 'json',
             data: data + '&process=1',
             cache: false,
