@@ -79,8 +79,6 @@
 <ul2>
 <li>This app has provided you with an option to compile and execute available code online.</li>
 <li>There may be a case that you do not see the result of the compiled/executed code, in such case you can re-try to compile and execute the code when using WiFi/Mobile Data.</li>
-
-
 <div id="wrapper">
         <h1>Try it here</h1>
         <form id="code" action="#" method="post">
@@ -88,14 +86,21 @@
             
             <div>
                 <label for="source">Source Code:</label>
-                <textarea id="codeTextarea" cols="50" rows="5" name="source" id="source" >class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;}&#13;&#10;}
+                <textarea id="codeTextarea" cols="10" rows="10" name="source" id="source" >class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;}&#13;&#10;}
 				
 				</textarea>
 				<script type="text/javascript">
    createTextAreaWithLines('codeTextarea');
    </script>
             </div>
-                       <div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea cols="3" rows="3" name="input" id="input"></textarea>
+				
+            </div>
+
+            <div>
                 <input type="submit" name="submit" value="Submit" />
             </div>
         </form>
@@ -104,11 +109,6 @@
             <div class="meta"></div>
             <div class="output"></div>
         </div>
-</div>
-
-<div id="container">
- <div id="content">
- </div>
 </div>
 
 <p>When we consider a Java program it can be defined as a collection of objects that communicate via invoking each other's methods.

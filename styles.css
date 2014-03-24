@@ -81,6 +81,11 @@ color:#545454;
 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 padding:1px;
 }
+ul2 li{
+list-style-type:disc;
+padding:5px;
+
+}
 /* logo*/
 IMG.displayed{
 display:block;
