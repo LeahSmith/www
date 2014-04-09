@@ -1,296 +1,19 @@
-* {
-	margin: 0;
-}
-
-ol, ul {
-    list-style: none;
-}
-p1{
-padding: 1px;
-font-size:16px;
-font-weight:bold;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-color:#92A4B7;
-}
-
-h3{
-background-color:#9ab9cf;
-color:#FFFFFF;
-padding: .4em;
-font-size:20px;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-}
-ul2{
-color:#545454;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-padding:1px;
-}
-ul2 li{
-list-style-type:disc;
-padding:5px;
-
-}
-ul
-{
-list-style:none;
-margin:0;padding:0;
-}
-ul li
-{
-font-size:18px;
-margin:0;padding:0;
-line-height:30px;
-border-bottom:solid 2px #d3d3d3;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-/* remember to define focus styles! */
-:focus {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
     outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-    text-decoration: none;
-}
-del {
-    text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    font-size: 14px;
-}
-
-#wrapper {
+    font-size: 100%;
+    vertical-align: baseline;
     
-    width: 250px;
-    background: #f8f8f8;
-    padding: 10px;
-    border: 1px solid #ccc;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-h1 {
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-color:#9ab9cf;
-    font-size: 20px;
-    margin: 0 0 20px;
-    padding: 0 0 10px;
-    text-align: center;
-}
-
-h1 a {
-    text-decoration: none;
-    color: #92A4B7;
-}
-
-h1 a:hover{
-    color: #2FBF4A;
-}
-
-label{
-    display: block;
-    margin: 10px 0 5px 0;
-    cursor: pointer;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-input[type=submit]{
-
-    cursor: pointer;
-}
-
-input, select, textarea {
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    padding: 5px;
-    border: 1px solid #ccc;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-textarea {
-    width: 230px;
-}
-
-.loading {
-    background: url('ajax-loader.gif') no-repeat;
-    line-height: 30px;
-    padding: 0 0 0 35px;
-}
-
-#response {
-    margin: 20px 0 0 0;
-    border: 2px solid black;
-    padding: 10px;
-    display: none;
-}
-
-.meta {
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    border-bottom: 1px solid #CCCCCC;
-    font-size: 12px;
-    margin-bottom: 10px;
-    padding: 0 0 10px;
-}
-
-.output, pre {
-
-    font-size: 13px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.output {
-    overflow: auto;
-    max-height: 500px;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-.loading {
-    background: url('ajax-loader.gif') no-repeat;
-    line-height: 30px;
-    padding: 0 0 0 35px;
-}
-
-
-.cmpinfo {
-    border-bottom: 1px solid #CCCCCC;
-    font-size: 12px;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin-bottom: 10px;
-    padding: 0 0 10px;
-}
-
-
-
-.description {
-    font-size: 11px;
-}
-ul#navigation
-{
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-list-style-type: none;
-margin: 0;
-padding: .5em 0;
-border-top: 1px solid #666;
-}
-
-ul#navigation li a
-{
-display: block;
-width: 4em;
-color: #FFF;
-background-color: #9ab9cf;
-padding: .2em 0;
-text-align: center;
-text-decoration: none;
-}
-
-ul#navigation li a:hover
-{
-color: #FFF;
-background-color: #69C;
-}
-
-ul#navigation .left { float: left; }
-ul#navigation .right { float: right; }
-
-h4{
-background-color:#9ab9cf;
-color: #FFFFFF;
-padding: .4em;
-font-size:12px;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-}
-
-#footer {
-    text-align: center;
-    font-size: 11px;
-    
-    padding: 10px 0 0 0;
-    margin: 10px 0 0 0;
-    line-height: 20px;
-}
-
-#codeTextarea{
-      width:200px;
-      height:150px;
-	  
-   }
-   #codeTextarea1{
-      width:200px;
-      height:150px;
-	  
-   }
-   .textAreaWithLines{
-      font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;      
-      border:1px solid #ccc;
-	  -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-	  
-      
-   }
-   .textAreaWithLines textarea,.textAreaWithLines div{
-      border:0px;
-      line-height:120%;
-      font-size:12px;
-	  border: 1px solid #fff;
-    
-   }
-   .lineObj{
-      color:#ccc;
-   }
-h4{
-font:bold 18px Arial;
-color:black;
-}
-.qheader{
-font:bold 14px Arial;
-color:#92A4B7;
-}
-
-.qselections{
-font:normal 13px Arial;
-color:#d3d3d3;
-}
-
-}
-h1{
-font-size:22px;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-color: #FFFFFF;
-text-align: center;
-padding: 25px;
-border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px
-}
-h2
-{
-color: #FFFFFF;
-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-font-size:16px;
-}
-html,body{
-margin:0;
-padding:0;
-
 }
 IMG.displayed{
 display:block;
@@ -328,17 +51,260 @@ background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
  width: 200px;
  }
  /*search bar end*/
+body {
+    line-height: 1;
 
+}
+ol, ul {
+    list-style: none;
+}
+p1{
+padding: 1px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color:#92A4B7;
+}
+a{
+text-decoration:none;
+color:#92A4B7;
+}
+h3{
+padding: .2em;
+font-size:20px;
+color:#545454;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+border-bottom:solid 2px #d3d3d3;
+}
+ul2{
+color:#545454;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+padding:1px;
+}
+ul2 li{
+list-style-type:disc;
+padding:5px;
 
+}
+im
+{
+list-style:none;
+margin:0;padding:0;
+}
+ul li
+{
+font-size:18px;
+color:#92A4B7;
+margin:0;padding:0;
+line-height:50px;
+border-bottom:solid 2px #d3d3d3;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
 
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
 
-html, body, #container { height: 100%; }
-body > #container { height: auto; min-height: 100%; }
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
 
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
+body {
+    background: #eee;
+    font-size: 14px;
+}
 
+#wrapper {
+    
+    width: 370px;
+    background: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
 
+h1 {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 30px;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    text-align: center;
+}
 
+h1 a {
+    text-decoration: none;
+    color: #92A4B7;
+}
 
+h1 a:hover{
+    color: #2FBF4A;
+}
 
+label{
+    display: block;
+    margin: 10px 0 5px 0;
+    cursor: pointer;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
+input[type=submit]{
+
+    cursor: pointer;
+}
+
+input, select, textarea {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 5px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 300px;
+}
+
+.loading {
+    background: url('ajax-loader.gif') no-repeat;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+}
+
+#response {
+    margin: 20px 0 0 0;
+    border: 2px solid orange;
+    padding: 10px;
+    display: none;
+}
+
+.meta {
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+}
+
+.output, pre {
+
+    font-size: 13px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.output {
+    overflow: auto;
+    max-height: 500px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.cmpinfo {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 10px;
+    padding: 0 0 10px;
+}
+
+#footer {
+    text-align: center;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+    line-height: 20px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+ul#navigation .left { float: left; }
+ul#navigation .right { float: right; }
+ul#navigation li a:hover
+{
+color: #FFF;
+background-color: #69C;
+}
+ul#navigation li a
+{
+display: block;
+border-radius:5px;
+width: 5em;
+height: 2.5em;
+color: #FFF;
+background-color: #9ab9cf;
+text-align: center;
+text-decoration: none;
+}
+#content { padding-bottom: 3em; }
+.description {
+    font-size: 11px;
+}
+li{
+font-size:16px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color:#666666;
+}
+li 2{
+font-size:16px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color:#92A4B7;
+
+}
+p{
+font-size:16px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color:#666666;
+}
+.navigationmenu
+{
+padding:10px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+color: #FFFFFF;
+text-align:center;
+width:100%;
+}
+.menu{
+background-color:#9ab9cf;
+color:#FFFFFF;
+border:solid 1px #d3d3d3;
+}
+.content{
+color:#92A4B7;
+border:solid 1px #CCCCCC;
+padding:15px;
+}
+h2
+{
+color: #FFFFFF;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size:16px;
+}
+h2 a {
+    text-decoration: none;
+    color: #92A4B7;
+}
+.snippet{
+border:solid 1px #CCCCCC;
+font-size:14px;
+padding:3px;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+background-color:#E8E8E8;
+}

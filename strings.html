@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="uft-8">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src= "jquery.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="script.js"></script>
+</head>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Java- Strings</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Strings</strong>  which are widely used in Java programming, are a sequence of characters. In the Java programming language, strings are objects.</p>
+<p>The Java platform provides the String class to create and manipulate strings. Strings are the most frequently used class in Java.</p>
+<p>The most direct way to create a string is to write:</p><br>
+<h3>Creating Strings</h3>
+<pre><code>String greeting = "Hello world!";</code></pre>
+<p>Whenever it encounters a string literal in your code, the compiler creates a String object with its value in this case, "Hello world!'.</p><br>
+    <p>Strings are an incredibly common type of data in computers. This page introduces the basics of Java strings: chars, +, length(), and substring().</p>
+	<p>A Java string is a series of characters gathered together, like the word "Hello", or the phrase "practice makes perfect". Create a string in the code by writing its chars out between double quotes.</p>	
+  </div>
+
+  <div data-role="footer"style="text-align:center;">
+  <a href="variables.html" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back to Variables</a>
+  <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+   <a href="#pagetwo" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">String + Concatenation</a>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>String + Concatenation</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>The + (plus) operator between strings puts them together to make a new, bigger string. The bigger string is just the chars of the first string put together with the chars of the second string.</p>
+  <code>String a = "kit" + "ten";  // a is "kitten"</code>
+  <p>Strings are not just made of the letters a-z. Chars can be punctuation and other miscellelaneous chars. For example in the string "hi ", the 3rd char is a space. This all works with strings stored in variables too, like this:</p>
+  <pre><code>String fruit = "apple";
+String stars = "***";
+String a = fruit + stars;  //  a is "apple***"</code></pre>
+
+<p>The String class includes a method for concatenating two strings:</p>
+<pre><code>string1.concat(string2);</code></pre>
+<p>This returns a new string that is string1 with string2 added to it at the end. You can also use the concat() method with string literals, as in:</p>
+<pre><code>"My name is ".concat("Zara");</code></pre>
+  </div>
+
+ <div data-role="footer"style="text-align:center;">
+  <a href="#pageone" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Java-Strings</a>
+  <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+   <a href="#pagethree" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">String Length</a>
+  </div>
+  </div>
+  
+  <div data-role="page" id="pagethree">
+  <div data-role="header">
+    <h1>String Length</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>The "length" of a string is just the number of chars in it. <br>
+	So "hi" is length 2 and "Hello" is length 5. </p>
+	<p>The length() method on a string returns its length, like this:</p>
+	<pre><code>String a = "Hello";
+int len = a.length();  // len is 5</code><pre>
+  </div>
+
+ <div data-role="footer"style="text-align:center;">
+  <a href="#pagetwo" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">String + Concatenating</a>
+  <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+   <a href="#pagefour" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">String Index Numbers</a>
+  </div>
+  </div>
+  
+    <div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>String Index Numbers</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>The "length" of a string is just the number of chars in it. <br>
+	So "hi" is length 2 and "Hello" is length 5. </p>
+	<p>The length() method on a string returns its length, like this:</p>
+	<pre><code>String a = "Hello";
+int len = a.length();  // len is 5</code><pre>
+  </div>
+
+ <div data-role="footer"style="text-align:center;">
+  <a href="#pagethree" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">String Length</a>
+  <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+   <a href="#pagefive" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">String Index Numbers</a>
+  </div>
+  </div>
+  
+ </html>
+
+  
+  
