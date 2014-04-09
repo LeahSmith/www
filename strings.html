@@ -8,7 +8,57 @@
 <script src= "jquery.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-<script src="script.js"></script>
+<script src="javascript/script.js"></script>
+<script  var lineObjOffsetTop = 2;
+   
+   function createTextAreaWithLines(id)
+   {
+      var el = document.createElement('DIV');
+      var ta = document.getElementById(id);
+      ta.parentNode.insertBefore(el,ta);
+      el.appendChild(ta);
+      
+      el.className='textAreaWithLines';
+      el.style.width = (ta.offsetWidth + 30) + 'px';
+      ta.style.position = 'absolute';
+      ta.style.left = '30px';
+      el.style.height = (ta.offsetHeight + 2) + 'px';
+      el.style.overflow='hidden';
+      el.style.position = 'relative';
+      el.style.width = (ta.offsetWidth + 30) + 'px';
+      var lineObj = document.createElement('DIV');
+      lineObj.style.position = 'absolute';
+      lineObj.style.top = lineObjOffsetTop + 'px';
+      lineObj.style.left = '0px';
+      lineObj.style.width = '27px';
+      el.insertBefore(lineObj,ta);
+      lineObj.style.textAlign = 'right';
+      lineObj.className='lineObj';
+      var string = '';
+      for(var no=1;no<200;no++){
+         if(string.length>0)string = string + '<br>';
+         string = string + no;
+      }
+      
+      ta.onkeydown = function() { positionLineObj(lineObj,ta); };
+      ta.onmousedown = function() { positionLineObj(lineObj,ta); };
+      ta.onscroll = function() { positionLineObj(lineObj,ta); };
+      ta.onblur = function() { positionLineObj(lineObj,ta); };
+      ta.onfocus = function() { positionLineObj(lineObj,ta); };
+      ta.onmouseover = function() { positionLineObj(lineObj,ta); };
+      lineObj.innerHTML = string;
+      
+   }
+   
+   function positionLineObj(obj,ta)
+   {
+      obj.style.top = (ta.scrollTop * -1 + lineObjOffsetTop) + 'px';   
+   
+      
+   }
+   
+   
+</script>
 <style>
 
 th
@@ -194,12 +244,18 @@ String c = str.substring(3);  // c is "lo"</code></pre>
                
 			<div>
                 <label for="source">Source Code:</label>
-                <textarea cols="40" rows="10" name="source" id="source"></textarea>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;
+class TryMe{&#13;&#10;
+public static void main(String args[]){&#13;&#10;
+System.out.println("This is awesome");&#13;&#10;
+}&#13;&#10;
+}&#13;&#10;</textarea>
             </div>
             
             <div>
                 <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
-                <textarea cols="40" rows="3" name="input" id="input"></textarea>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
             </div>
 
             <div>
