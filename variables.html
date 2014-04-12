@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 <link rel="stylesheet" href="themes/app.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
@@ -74,8 +75,14 @@ background:#e9e9e9;
 <!--Variables Tutorial Start-->
 <div data-role="page" id="pageone">
   <div data-role="header">
-   <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
     <h1>Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
   <div data-role="main" class="ui-content">
     <p>Java is a strongly typed programming language. 
@@ -111,15 +118,25 @@ int num6;<br>
 num6 = 15;</code><br>
 
 	</div>
-    <div data-role="footer"style="text-align:center;">
-  <a href="Intro.html" rel="external" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back </a>
-   <a href="#pagetwo" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Data Types</a>
-  </div>
+	<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="Intro.html#introexampleone" rel="external" data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#pagetwo"  data-transition="slide" data-icon="arrow-r">Data Types</a></li>
+      </ul>
+    </div>
+      </div>
 </div> 
 <div data-role="page" id="pagetwo">
   <div data-role="header">
-   <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
     <h1>Data Types</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
   <div data-role="main" class="ui-content">
   <p>Java uses many specific data types; each has different properties in terms of size required and handling by the compiler:</p>  
@@ -195,17 +212,26 @@ context of the type (e.g. 1, Hello World, 5.63)</li>
 <p>Next we will discuss the various operations that can be performed on Java Variables and Data Types.</p>
 
 </div>
-
- <div data-role="footer"style="text-align:center;">
-  <a href="#pageone" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back </a>
-   <a href="#pagethree" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Operators in Java</a>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#pagethree"  data-transition="slide" data-icon="arrow-r">Operators in Java</a></li>
+      </ul>
+    </div>
   </div>
 </div> 
 
 <div data-role="page" id="pagethree">
   <div data-role="header">
-   <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
-    <h1>Java Operators</h1>
+       <h1>Java Operators</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
   <div data-role="main" class="ui-content">
 <p> Java provides a rich set of <strong>operators</strong> to manipulate variables. We can divide all the Java operators into the following groups:</p>
@@ -318,15 +344,26 @@ Assume variable A holds 10 and variable B holds 20, then:</p>
 <p>The other operators will be discussed at a later stage</p>
 <p>Next we will discuss operator precedence.</p>
 </div>
-<div data-role="footer"style="text-align:center;">
-  <a href="#pagetwo" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back </a>
-   <a href="#pagefour" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Operator Precedence</a>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pagetwo" data-transition="slide" data-icon="arrow-l">Data Types</a></li>
+        <li> <a href="#pagefour"  data-transition="slide" data-icon="arrow-r">Operators Precedence</a></li>
+      </ul>
+    </div>
   </div>
 </div> 
 <div data-role="page" id="pagefour">
   <div data-role="header">
-  <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+ 
     <h1>Operator Precedence</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
   <div data-role="main" class="ui-content">
     <p>Java has well-defined rules for specifying the order in which the operators in an expression are evaluated when the expression has several operators. For example, multiplication and division have a higher precedence than addition and subtraction. Precedence rules can be overridden by explicit parentheses.</p>
@@ -361,16 +398,25 @@ modulus</li>
 from left to right (for the majority of the 
 time)</li>
   </div>
-
-  <div data-role="footer"style="text-align:center;">
-  <a href="#pagethree" rel="external" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a>
-   <a href="#pagefive" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Decision Making in Java</a>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pagethree" data-transition="slide" data-icon="arrow-l">Operators in Java</a></li>
+        <li> <a href="#pagefive"  data-transition="slide" data-icon="arrow-r">Decision making in Java</a></li>
+      </ul>
+    </div>
   </div>
 </div> 
 <div data-role="page" id="pagefive">
   <div data-role="header">
-  <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
     <h1>Decision making in Java</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
   <div data-role="main" class="ui-content">
    <p>There are two types of decision making statements in Java. They are:</p>
@@ -502,19 +548,31 @@ public static void main(String[] args){
 	}</pre></code>
 
  </div>
-
-  <div data-role="footer"style="text-align:center;">
-  <a href="#pagefour" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back </a>
-   <a href="#variableexampleone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Example One: Variable</a>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pagefour" data-transition="slide" data-icon="arrow-l">Operator Precedence </a></li>
+        <li> <a href="#variableexampleone"  data-transition="slide" data-icon="arrow-r">Example One: Variables</a></li>
+      </ul>
+    </div>
+ 
   </div>
 </div> 
 <!--Variable Tutorial End-->
  <!--Variable Examples-->
  <div data-role="page" id="variableexampleone">
   <div data-role="header">
-  <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+  
     <h1>Example One: Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
+  
   <div data-role="main" class="ui-content">
     <div id="wrapper">
         <h3>Declaring Java Variables </h3>
@@ -545,17 +603,27 @@ public static void main(String[] args){
 <script src="script.js"></script>
   </div>
   </div>
-
- <div data-role="footer"style="text-align:center;">
-  <a href="#pagetwo" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Data Type</a>
-   <a href="#variableexampletwo" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Example Two</a>
-  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pagefive" data-transition="slide" data-icon="arrow-l">Decision making in Java </a></li>
+        <li> <a href="#variableexampletwo"  data-transition="slide" data-icon="arrow-r">Example Two</a></li>
+      </ul>
+    </div>
+   </div>
   </div>
   
   <div data-role="page" id="variableexampletwo">
   <div data-role="header">
-  <a href="index.html" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left">Home </a>
+
     <h1>Example Two: Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="index.html" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search This Chapter</a></li>
+      </ul>
+    </div>
   </div>
   <div data-role="main" class="ui-content">
     <div id="wrapper">
@@ -585,10 +653,14 @@ public static void main(String[] args){
 <script src="script.js"></script>
   </div>
   </div>
-
- <div data-role="footer"style="text-align:center;">
-  <a href="#variableexampleone" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Example One</a>
-   <a href="loops.html" rel="external" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Section Three: Loops</a>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#variableexampleone" data-transition="slide" data-icon="arrow-l">Example One </a></li>
+        <li> <a href="loops.html" rel="external" data-transition="slide" data-icon="arrow-r">Section Three: Loops</a></li>
+      </ul>
+    </div>
+ 
   </div>
   </div>
 
