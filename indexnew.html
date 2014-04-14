@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/app.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="javascript/script.js"></script>
+
+<style>
+
+
+th
+{
+border-bottom: 1px solid #d6d6d6;
+}
+tr:nth-child(even)
+{
+background:#e9e9e9;
+}
+
+
+#logo {
+  text-align: center;
+  margin:0 auto;
+  }
+ .header{
+ padding:10px;
+ text-align:center;
+ }
+ .content{
+ text-align:center;
+ margin: 0px auto;
+border-bottom:solid 1px #d3d3d3;
+padding:10px;
+  }
+ a{
+ text-decoration:none;
+color:#858585;
+}
+  
+</style>
+<div data-role="page" id="pageone">
+<div id="logo"><img src="java_icon.png" alt="Java" width="300" height="200" ></div>
+</head>
+
+<body>
+
+ 
+
+<div data-role="collapsible-set" data-theme="b" data-content-theme="d" data-collapsed-icon="false" data-inset="false">
+				<div data-role="collapsible">
+					<h2 ><div class="header">Tutorials</div></h2>
+					<div data-role="collapsible">
+					<h2><div class="header">Section One:Introduction to Java</div></h2>
+					<p class="content"><a href="#sectiononeone">What is Java?</a></p>
+					<p class="content"><a href="#sectiononetwo">Getting started with Java</p>
+					<p class="content"><a href="#sectiononethree">Basic Syntax</p>
+					<p class="content"><a href="#sectiononefour">Writing your first program</p>
+					<p class="content"><a href="#sectiononefive">Important Points</p>
+					<p class="content"><a href="#sectiononesix">Dealing with Errors</p>
+					</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Section Two:Variables</div></h2>
+					<p class="content"><a href="#sectiontwoone">Declaring Variables</a></p>
+					<p class="content"><a href="#sectiontwotwo">Data Types</a></p>
+					<p class="content"><a href="#sectiontwothree">Operators in Java</a></p>
+					<p class="content"><a href="#sectiontwofour">Operator Precedence</a></p>
+					<p class="content"><a href="#sectiontwofive">Decision Making in Java</a></p>
+					
+						</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Section Three:Loops</div></h2>
+					<p class="content"><a href="#sectionthreeone">Introduction to Loops</a></p>
+					<p class="content"><a href="#sectionthreetwo">While Loops</a></p>
+					<p class="content"><a href="#sectionthreethree">For Loops</a></p>
+					<p class="content"><a href="#sectionthreefour">Do..While Loops</a></p>
+					<p class="content"><a href="#sectionthreefive">Constants</a></p>
+					<p class="content"><a href="#sectionthreesix">Nested Loops</a></p>
+						</div>
+						<div data-role="collapsible">
+					<h2><div class="header">Section Four:Strings</div></h2>
+					<p class="content"><a href="#sectionfourone">Java - Strings</a></p>
+					<p class="content"><a href="#sectionfourtwo">String + Concatenation</a></p>
+					<p class="content"><a href="#sectionfourthree">String Length</a></p>
+					<p class="content"><a href="#sectionfourfour">String Index Numbers</a></p>
+					<p class="content"><a href="#sectionfourfive">Substring()</a></p>
+					<p class="content"><a href="#sectionfoursix">Other Methods</a></p>
+						</div>
+							<div data-role="collapsible">
+					<h2><div class="header">Section Five:User Input</div></h2>
+					<p class="content"><a href="#sectionfiveone">Introduction</a></p>
+						</div>
+							<div data-role="collapsible">
+					<h2><div class="header">Section Six: Arrays</div></h2>
+					<p class="content"><a href="#sectionsixone">What is an array?</a></p>
+					<p class="content"><a href="#sectionsixtwo">Array Index</a></p>
+					<p class="content"><a href="#sectionsixthree">More on Arrays</a></p>
+					<p class="content"><a href="#sectionsixfour">Random Numbers</a></p>
+					<p class="content"><a href="#sectionsixfive">Arrays and Loops</a></p>
+					
+						</div>
+							<div data-role="collapsible">
+					<h2><div class="header">Section Seven: Methods</div></h2>
+					<p class="content"><a href="#sectionsevenone">Introduction</a></p>
+															</div>
+					</div>
+					<div data-role="collapsible">
+					<h2 ><div class="header">Examples</div></h2>
+					<div data-role="collapsible">
+					<h2><div class="header">Examples:Introduction to Java</div></h2>
+					<p class="content"><a href="#oneexampleone" >Example One: A Simple Java Program</a></p>
+										</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Examples:Variables</div></h2>
+					<p class="content"><a href="#twoexampleone">Example One:Declaring Variables</a></p>
+					<p class="content"><a href="#twoexampletwo">Example Two: Using operators and variables</a></p>
+										</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Examples:Loops</div></h2>
+					<p class="content"><a href="#threeexampleone">Example One:While Loop</a></p>
+					<p class="content"><a href="#threeexampletwo">Example Two: For Loop</a></p>
+										</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Examples:Strings</div></h2>
+					<p class="content"><a href="#fourexampleone">Example One:Strings in use</a></p>
+															</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Examples:User Input</div></h2>
+					<p class="content"><a href="fiveexampleone">Example One:A full Scanner class</a></p>
+															</div>
+					<div data-role="collapsible">
+					<h2><div class="header">Examples:Arrays</div></h2>
+					<p class="content"><a href="#sixexampleone">Example One:Asking a user for array elements</a></p>
+															</div>
+									
+										</div>
+										<div data-role="collapsible">
+					<h2 ><div class="header">Quiz Yourself</div></h2>
+					
+					<p class="content"><a href="Intro.html#pageone" rel="external">Multiple Choice Quiz</a></p>
+					<p class="content"><a href="Intro.html#pagetwo">What is the expected output of this code?</p>
+					<p class="content"><a href="Intro.html#pagethree">Find the errors in the code snippet</p>
+					
+					</div>
+					<div data-role="collapsible">
+					<h2 ><div class="header">Run Your Code</div></h2>
+					
+					<p class="content"><a href="Intro.html#pageone" rel="external">Multiple Choice Quiz</a></p>
+					<p class="content"><a href="Intro.html#pagetwo">What is the expected output of this code?</p>
+					<p class="content"><a href="Intro.html#pagethree">Find the errors in the code snippet</p>
+					
+					</div>
+					<div data-role="collapsible">
+					<h2 ><div class="header">Options</div></h2>
+					
+					<p class="content"><a href="Intro.html#pageone" rel="external">Multiple Choice Quiz</a></p>
+					<p class="content"><a href="Intro.html#pagetwo">What is the expected output of this code?</a></p>
+					<p class="content"><a href="Intro.html#pagethree">Find the errors in the code snippet</a></p>
+					
+					</div>
+					<div data-role="collapsible">
+					<h2 ><div class="header">About this app</div></h2>
+					
+					<p class="content">Developed by Leah Buchanan- NUI Maynooth <br>
+					Compiler API with thanks to Sphere Research@ IdeOne.com</p>
+					</div>
+					
+
+	</div>
+	
+</div>
+<div data-role="page" id="sectiononeone">
+  <div data-role="header">
+  
+  
+    <h1>Introduction to Java</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div data-role="panel" id="myPanel" data-display="reveal"> 
+    <h5>Navigation</h5>
+    <ul data-role="listview">
+	<li><a href="Intro.html" rel="external">Section One:Introduction to Java</a></li>
+	<ul>
+	<li><a href="#pageone"> INrto</a></li>
+	</ul>
+	<li><a href="audi.html">Audi</a></li>
+	<li><a href="bmw.html">BMW</a></li>
+</ul>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+  </div>
+<h4><u>What is Java?</u></h4>
+<p><strong>Java is a "High-Level" programming language</strong><br>
+Java can be used to write:<br>
+	&nbsp&nbsp-Applications<br>
+	&nbsp&nbsp-Applets</p>
+	
+	<p><u>Java is : </u></p>
+	<li><b>Object Orientated:</b>In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</li>
+<li><b>Platform Independent:</b>Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by virtual Machine (JVM) on whichever platform it is being run.</li>
+<li><b>Simple:</b> Java was designed to be easy to learn</li>
+<li><b>Portable:</b> Being architectural-neutral and having no implementation dependent aspects of the specification makes Java portable.</li>
+<li><b>Robust:</b> Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</li>
+
+<h4>Try it Option</h4>
+This app allows you with an option to compile and execute available code online.
+Should you not see the result of the compiled/executed code, you can re-try to compile and execute the code when using WiFi/Mobile Data.<br>
+ <div id="wrapper">
+        <br>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source"><strong>Source Code:</strong></label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;System.out.println("This is awesome");&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input"><strong>Input:</strong> <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+  </div>
+  
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pageone" rel="external" data-icon="home">Home </a></li>
+        <li> <a href="#sectiononetwo"  data-transition="slide" data-icon="arrow-r">Getting started with Java</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+<div data-role="page" id="sectiononetwo">
+  <div data-role="header">
+  
+    <h1>Getting started with Java</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p> 1. Download the Java Software Development 
+Kit (sdk) for free from http://www.java.com/en/download/manual.jsp<br>
+ 2. Download JCreator LE from:
+http://www.jcreator.org/download.htm</p>
+
+<h4>Writing a Java program</h4>
+<li>Write the program in plain text format and save with a .java file 
+extension</li>
+<li> But, the machine won’t understand this</li>
+<li>So, we need to compile the program to turn it into Java bytecode. <br>
+The bytecode is stored in .class file</li>
+ <li>Bytecode is a highly optimised set of instructions designed to be 
+executed by a JVM.</li>
+<li> A JVM interprets the bytecode and runs it on the machine<br>
+The compiler is called javac and the JVM interpreter is called java</li>
+<h4> The Java virtual Machine</h4>
+<p>The JVM is just a software program<br<
+Allows the same .java files to run on any 
+machine</p>
+ <li>Windows pc </li>
+  <li>Mobile phone </li>
+  <li>Mac computers  </li>
+  <li>Linux pc </li>
+  <p>Java is portable because it relies on layer of Software and Hardware
+ <li>Especially the JVM</li>
+ <li>Each layer only interacts with neighbouring layers</li>
+  </div>
+
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+      <ul>
+  <li><a href="#sectiononeone" data-transition="slide" data-icon="arrow-l">Introduction to Java</a></li>
+  <li> <a href="#sectiononethree" data-transition="slide" data-icon="arrow-r">Basic Syntax</a></li>
+   </ul>
+   </div>
+  </div>
+</div> 
+  
+  <div data-role="page" id="sectiononethree">
+  <div data-role="header">
+  
+    <h1>Basic Syntax</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+<p>When we consider a Java program it can be defined as a collection of objects that communicate via invoking each other's methods.
+ Let us now briefly look into what do <i>class, object, methods and instance variables</i> mean.</p>
+ <li><strong>Object</strong> - Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class</li>
+ <li><strong>Class </strong>- A class can be defined as a template/ blue print that describes the behaviors/states that object of its type support.</li>
+<li><strong>Methods</strong> - A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, 
+data is manipulated and all the actions are executed.</li>
+<li><strong>Instance Variables</strong> - Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</li>
+<br>
+
+<p> <u>Java is case-sensitive.</u> main(), Main(), and MAIN() would all be different methods.<br>
+There are a limited number of reserved words that have a special meaning within Java. You cannot use these words for your own variables or methods.<br>
+Some examples of reserved words are:<br>
+<li><code>public</code></li>
+<li><code> static</code></li>
+<li><code> void</code></li>
+<li><code> do</code></li>
+<li><code> while</code></li>
+<li><code> if</code></li><br>
+Names may contain alphabetic characters, numeric characters, currency characters, and connecting characters such as the underscore ( _ ) character:</p>
+
+<h4>Java Statements</h4>
+<li>A Java statement is one step of code, which may span across multiple lines.</li>
+<li>Java statements end with a semicolon (the ; character).</li>
+<li>It is OK to have multiple statements on a single line.</li>
+<li>Program execution is done statement by statement, one statement at a time from top to bottom (if there is more than one statement on a line, execution goes from left to right).</li>
+<li>Within a statement, execution of the individual pieces is not necessarily left to right. There are concepts called operator precedence and associativity that determine the order of operations within a statement.</li>
+
+<h4>Blocks of Code</h4>
+<p>A block of code:</p>
+<li>Is enclosed in curly braces - start with { and end with }.</li>
+<li>Consists of zero, one, or more statements.</li>
+<li>Behaves like a single statement to the outside world..</li>
+<li>May be nested (e.g., it may contain one or more other blocks of code inside).</li>
+<li>Generally belong to whatever comes before it. Although it is perfectly OK to create a block that does not, this is almost never done.</li>
+<li>A complete method is a single block of code, most likely with nested blocks.</li><br>
+
+The diagram below illustrates how blocks of code can be nested<br></p>
+<img src="blockofcode.gif" alt="code" width="280"  height="160">
+<br>
+
+<h4> Comments</h4>
+<p>A comment:
+<li>Is additional, non-executable text in a program used to document code.</li>
+<li>May also be used to temporarily disable a section of code (for debugging).</li>
+<li>Block Comments may aslo be used for larger pieces of text-Block comments are preceded by <pre>/* and followed by */.</pre></li>
+<li>Single line comments are denoted with // and must appear at the end of a line.</li>
+
+			</div>
+
+ 
+ <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+      <ul>
+  <li><a href="#sectiononetwo"  data-transition="slide" data-icon="arrow-l">Introduction to Java</a></li>
+  <li> <a href="#sectiononefour" data-transition="slide" data-icon="arrow-r">Writing your first program</a></li>
+   </ul>
+   </div>
+  </div>
+</div> 
+
+<div data-role="page" id="sectiononefour">
+  <div data-role="header">
+  
+    <h1>Writing your first program</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <h4> Steps to writing a Java program</h4>
+   <p>1. Develop an algorithm(An algorithm is a detailed list of steps the program should do)<br>
+2. Write a software implementation of the algorithm – a software program<br>
+3. Compile it<br>
+4. Fix any compilation errors<br>
+5. Test it – try to run it<br>
+6. Fix any runtime errors<br></p>
+
+<h4>A simple program</h4>
+<code><pre>
+/* This is a comment. It does not run- It s only used to make code more readable */
+
+public class Helloworld
+	{
+		public static void main (String args[])
+			{
+		System.out.println(“Hello, World”);
+			}
+	}</pre></code>
+
+<p><li>Create the source file with a text editor</li>
+<li>Save as Helloworld.java</li>
+<li>Compile the source into bytecode</li>
+	  -javac Helloworld.java
+<li>Interpret the bytecode</li>
+	  -java Helloworld</p>
+
+  </div>
+
+  
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+      <ul>
+  <li><a href="#sectiononethree" data-transition="slide" data-icon="arrow-l">Basic Syntax</a></li>
+  <li> <a href="#sectiononefive" data-transition="slide" data-icon="arrow-r">Important Points</a></li>
+   </ul>
+   </div>
+  </div>
+</div> 
+<div data-role="page" id="sectiononefive">
+  <div data-role="header">
+  
+    <h1>Important Points</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <li>Java is case sensitive</li>
+<li>All statements in Java end with a semi-colon</li>
+<li>There are several types of comments in Java <br>
+ single line comments - //<br>
+// This is a single line comment<br>
+ multiline comments /* ……*/<br>
+/* This is a multi-line comments, use this type of comment when your comment is longer than one line */</li>
+<li>Indentation is very important. It makes your 
+program easier to read!</li>
+
+  </div>
+
+ 
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+      <ul>
+  <li><a href="#sectiononefour"  data-transition="slide" data-icon="arrow-l">Writing your first program</a></li>
+  <li> <a href="#sectiononesix" data-transition="slide" data-icon="arrow-r">Dealing with Errors</a></li>
+   </ul>
+   </div>
+  </div>
+</div> 
+
+<div data-role="page" id="sectiononesix">
+  <div data-role="header">
+  
+    <h1>Errors</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <h4>Syntax Errors</h4>
+  <p>A syntax error occurs when the source code contains 
+something that is not valid “Java” code.</p>
+</p> Classic errors include:</p>
+ <li>Missing a ; on end of line.</li>
+ <li>Unpaired\misplaced brackets { }, [ ], ( )..</li>
+ <li>Using a keyword as a variable name..</li>
+ <li>Copy and paste errors, some characters look similar but are not equivalent. .</li>
+ <li>Confusing similar looking characters, 0 and O, 1 and l. Since o, O and Q look like zero they are not normally used as a 
+variable name..</li>
+ <li>Java is case sensitive e.g. String and string are not the same.</li>
+ <li>The class name within the file must be the same as the file 
+name (with .java extension).</li>
+
+<h4> Logical(Runtime) Errors</h4>
+<li>A logical error occurs when a program compiles but 
+does not run as expected. </li>
+<li>These problems can be very difficult to solve so the best practice 
+is try to get it right from the start, don’t let the problem in. </li>
+<li>Use top down design, piecewise refinement to primitives and 
+only then translate to Java. </li>
+<li>Comment the code as you go, use good indentation and obey 
+conventions (e.g. variable names lowercase, class names first 
+letter capital etc). </li>
+<li> Be sure to use test data that you know the correct output for 
+during the commissioning phase of your program.</li>
+
+</div>
+
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+      <ul>
+  <li><a href="#sectiononefive"  data-transition="slide" data-icon="arrow-l">Important Points</a></li>
+  <li> <a href="#oneexampleone" data-transition="slide" data-icon="arrow-r">Example One</a></li>
+   </ul>
+   </div>
+  </div>
+</div> 
+
+
+<div data-role="page" id="oneexampleone">
+  <div data-role="header">
+  
+    <h1>Example One: My first Program</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div id="wrapper">
+        <h3>Example of a simple Java Program </h3>
+		<p>Click Submit and wait to see the expected output.</p>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">/**&#13;&#10;* This program prints details to the screen&#13;&#10;&#13;&#10;**/&#13;&#10;import java.lang.*;&#13;&#10;public class Details{&#13;&#10;public static void main(String args[]){&#13;&#10;&#13;&#10;// The following lines print details to the screen&#13;&#10;System.out.println("Student Name");&#13;&#10;System.out.println("Address");&#13;&#10;System.out.println("Student Number");&#13;&#10;System.out.println("Course Code");&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+   
+  </div>
+ 
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+      <ul>
+  <li><a href="#sectiononesix" data-transition="slide" data-icon="arrow-l">Dealing with Errors</a></li>
+  <li> <a href="#sectiontwoone" data-transition="slide" data-icon="arrow-r">Section Two: Variables</a></li>
+   </ul>
+   </div>
+  </div>
+</div> 
+<div data-role="page" id="sectiontwoone">
+  <div data-role="header">
+    <h1>Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Java is a strongly typed programming language. 
+	This means that every variable must have <a href="#pagetwo">a data type</a> associated with it. 
+	For example, a variable could be declared to use one of the eight primitive data types: byte, short, int, long, float, double, char or boolean.
+	In essence,in Java,<strong> variables store data that your code can use.</strong></p>
+<h3>Declaring Variables</h3>
+<pre><code>int number= 5;</code></pre>
+<p>Variables must be <i>declared</i> before they are used.<br>
+A declaration informs the compiler that you wish to: </p>
+<ol data-role="listview">
+      <li>Create an <i>identifier</i> that will be accepted by the compiler within a section of code.</li>
+      <li>Associate that identifier with a specified type of data, and enforce restrictions related to that in the remainder of your code.</li>
+      <li>Create a memory location for the specified type of data</li>
+	  <li>Associate the identifier with that memory location.</li>
+    </ol>  <br>
+	<p>To declare a variable use the following syntax:<br></p>
+<code>[type] [identifier] = [value]; </code><br>
+<p><u><strong> Examples:</u></strong></p>
+<li style="list-style-type:none;";><code> int num1 = 156;</code><br>
+num1 is variable of type int with the current value of 156.</li><br>
+<li style="list-style-type:none;";><code> float num2 = 7.89f;</code><br>
+num2 is a variable of type float with a current value of 7.89</li><br>
+<li style="list-style-type:none;";><code> char c1 = ‘s’;</code><br>
+c1 is a variable of type char with a current value of ‘s’</li><br>
+<li style="list-style-type:none;";><code> boolean found = false;</code><br>
+found is a variable of type boolean with a current value of 
+false</li><br>
+
+<p> We can also declare and assign variables as follows:</p>
+<code>int num4 =10, num5 = 9;<br>
+int num6;<br>
+num6 = 15;</code><br>
+
+	</div>
+	<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#oneexampleone"  data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#sectiontwotwo"  data-transition="slide" data-icon="arrow-r">Data Types</a></li>
+      </ul>
+    </div>
+      </div>
+</div> 
+<div data-role="page" id="sectiontwotwo">
+  <div data-role="header">
+    <h1>Data Types</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>Java uses many specific data types; each has different properties in terms of size required and handling by the compiler:</p>  
+      <li>The declaration specifies the name and datatype.</li>
+      <li>Generally the declaration also defines the variable, meaning that it causes the compiler to allocate storage space in memory of the requested type's size.</li>
+      <li>A declaration may also assign an initial value (to initialize the variable).</li>
+	  <li>Multiple variables of the same type can be declared in a comma-separated list</li>
+
+<p>The table below shows the basic Java data types:</p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Size(in bits)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>byte</code></td>
+          <td>8 bit signed integer (integer - counting number)</td>
+          <td>8</td>   
+        </tr>
+        <tr>
+          <td><code>short</code></td>
+          <td>16 bit signed integer</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td><code>int</code></td>
+          <td>32 bit signed integer</td>
+          <td>32</td>
+              </tr>
+        <tr>
+          <td><code>long</code></td>
+          <td>64 bit signed integer</td>
+          <td>64</td>
+          
+        </tr>
+		<tr>
+          <td><code>float</code></td>
+          <td>floating point number</td>
+          <td>32</td>
+        </tr>
+		<tr>
+          <td><code>double</code></td>
+          <td>floating point number</td>
+          <td>64</td>
+        </tr>
+      <tr>
+          <td><code>char</code></td>
+          <td>a unicode character, e.g. ‘a’, ‘b’, ‘c’</td>
+          <td>16</td>
+        </tr>
+		<tr>
+          <td><code>boolean</code></td>
+          <td>Logical true or false</td>
+          <td>1</td>
+        </tr>
+	  </tbody>
+    </table>
+
+<br>
+<p> A <u>variable</u> is a means of <u>storing a value</u> on a computer.</p>
+<p> It has the following <u><strong>three</u></strong> features:</p>
+<ol data-role="listview">
+      <li><b>Type:</b> Describes how the data in memory is to be interpreted<br>(e.g. Integer, String, Floating point number)</li>
+      <li>Name:</b> This is used to refer to it in the program (e.g. x,y), 
+sometimes we use the word “identifier” instead of name</li>
+      <li><b>Value:</b> This is the contents of the memory interpreted in the 
+context of the type (e.g. 1, Hello World, 5.63)</li>
+	    </ol>
+<p>Next we will discuss the various operations that can be performed on Java Variables and Data Types.</p>
+
+</div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectiontwoone" data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#sectiontwothree"  data-transition="slide" data-icon="arrow-r">Operators in Java</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+<div data-role="page" id="sectiontwothree">
+  <div data-role="header">
+       <h1>Java Operators</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+<p> Java provides a rich set of <strong>operators</strong> to manipulate variables. We can divide all the Java operators into the following groups:</p>
+<li>Arithmetic Operators</li>
+<li>Relational Operators</li>
+<li>Bitwise Operators</li>
+<li>Logical Operators</li>
+<li>Assignment Operators</li>
+<li>Misc Operators</li>
+<h4><u>The Arithmetic Operators:</u></h4>
+<p>Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra.<br> 
+The following table lists the arithmetic operators:
+Assume integer variable A holds 10 and variable B holds 20, then:</p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>+</code></td>
+          <td>Addition - Adds values on either side of the operator</td>
+          <td>A + B will give 30</td>   
+        </tr>
+		<tr>
+          <td><code>-</code></td>
+          <td>Subtraction - Subtracts right hand operand from left hand operand</td>
+          <td>A - B will give -10</td>   
+        </tr>
+		<tr>
+          <td><code>*</code></td>
+          <td>Multiplication - Multiplies values on either side of the operator</td>
+          <td>A * B will give 200</td>   
+        </tr>
+		<tr>
+          <td><code>/</code></td>
+          <td>Division - Divides left hand operand by right hand operand</td>
+          <td>B / A will give 2</td>   
+        </tr>
+		<tr>
+          <td><code>%</code></td>
+          <td>Modulus - Divides left hand operand by right hand operand and returns remainder</td>
+          <td>B % A will give 0</td>   
+        </tr>
+		<tr>
+          <td><code>++</code></td>
+          <td>Increment - Increases the value of operand by 1</td>
+          <td>B++ will give 21</td>   
+        </tr>
+		<tr>
+          <td><code>--</code></td>
+          <td>Decrement - Decreases the value of operand by 1</td>
+          <td>B-- will give 19</td>   
+        </tr>
+		
+		</tbody>
+    </table>
+	<h4><u>The Relational Operators:</u></h4>
+<p>There are following relational operators supported by Java language<br>
+Assume variable A holds 10 and variable B holds 20, then:</p>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>==</code></td>
+          <td>Checks if the values of two operands are equal or not, if yes then condition becomes true.	</td>
+          <td>(A == B) is not true</td>   
+        </tr>
+		<tr>
+          <td><code>!=</code></td>
+          <td>Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</td>
+          <td>(A != B) is true</td>   
+        </tr>
+		<tr>
+          <td><code>></code></td>
+          <td>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</td>
+          <td>(A > B) is not true</td>   
+        </tr>
+		<tr>
+          <td><code><</code></td>
+          <td>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</td>
+          <td>(A > B) is true</td>   
+        </tr>
+		<tr>
+          <td><code>>=</code></td>
+          <td>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</td>
+          <td>(A >= B) is not true</td>   
+        </tr>
+		<tr>
+          <td><code><=</code></td>
+          <td>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</td>
+          <td>A >= B) is true</td>   
+        </tr>
+		<tr>
+          <td><code>--</code></td>
+          <td>Decrement - Decreases the value of operand by 1</td>
+          <td>B-- will give 19</td>   
+        </tr>
+	</tbody>
+    </table>
+<p>The other operators will be discussed at a later stage</p>
+<p>Next we will discuss operator precedence.</p>
+</div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectiontwotwo" data-transition="slide" data-icon="arrow-l">Data Types</a></li>
+        <li> <a href="#sectiontwofour"  data-transition="slide" data-icon="arrow-r">Operators Precedence</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+<div data-role="page" id="sectiontwofour">
+  <div data-role="header">
+ 
+    <h1>Operator Precedence</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Java has well-defined rules for specifying the order in which the operators in an expression are evaluated when the expression has several operators. For example, multiplication and division have a higher precedence than addition and subtraction. Precedence rules can be overridden by explicit parentheses.</p>
+  <p><strong>Precedence Order.</strong> When two operators share an operand the operator with the higher precedence
+  goes first. For example, 1 + 2 * 3 is treated as 1 + (2 * 3), whereas 1 * 2 + 3 is treated as (1 * 2) + 3 since multiplication has a higher precedence than addition.</p>
+<p><strong>Associativity.</strong> When two operators with the same precedence the expression is evaluated according to its associativity. For example x = y = z = 17 is treated as x = (y = (z = 17)), leaving all three variables with the value 17, since the = operator has right-to-left associativity (and an assignment statement evaluates to the value on the right hand side). On the other hand, 72 / 2 / 3 is treated as (72 / 2) / 3 since the / operator has left-to-right associativity.</p>
+  
+ <pre>
+ Precedence 			Operator 			Associativity
+ Highest 			( ) [ ] .			left to right
+				 ++ -- ! 			right to left
+				  * / % 			left to right
+				   + - 				left to right
+			        > >= < <= 			left to right
+				  == != 			left to right
+				    & 				left to right
+				    ^ 				left to right
+				    | 				left to right
+				   && 				left to right
+				   || 				left to right
+Lowest 			   	   = 				right to left</pre>
+  
+  
+ <li>Brackets in an expression take 
+precedence</li>
+<li>Followed by increment and decrement 
+operations</li>
+<li>Followed by multiplication, division and 
+modulus</li>
+<li> Followed by addition and subtraction</li>
+<li>In the event of equal precedence work 
+from left to right (for the majority of the 
+time)</li>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectiontwothree" data-transition="slide" data-icon="arrow-l">Operators in Java</a></li>
+        <li> <a href="#sectiontwofive"  data-transition="slide" data-icon="arrow-r">Decision making in Java</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+<div data-role="page" id="sectiontwofive">
+  <div data-role="header">
+    <h1>Decision making in Java</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p>There are two types of decision making statements in Java. They are:</p>
+   <li><code>if</code>statments</li>
+   <li><code>switch</code>statements</li>
+   <h4>If Statements</h4>
+   <p> An if statements tells your program to execute a certain section of code only if a particular test evaluates to true.</p>
+   <p>Executing code when one thing happens rather than something else is so common in programming that that the <code>if</code> Statement was developed. The structure of the <code>if</code> Statement in Java is as follows:</p>
+<code><pre>
+if ( Statement ) {
+
+}</pre></code>
+<p>You start with the word <code>if </code>(in lowercase) and a pair of round brackets. 
+You then use a pair of curly brackets to section off a chunk of code. 
+This chunk of code is code that you only want to execute <code>if </code> your condition is met. The condition itself goes between round brackets:</p>
+<code><pre>
+if ( user < 18 ) {
+   //code to execute if condition met
+}</pre></code>
+</p> The code above states "if the user is less than 18, execute the code</p>
+<h4><u>If Statement- Example</u></h4>
+<code><pre>
+public class ifStatements{
+	public static void main(String[] args){
+		
+		int user = 17;
+		if(user < 18){
+		System.out.println("User is under 18!");
+		}
+	}
+}</pre></code>
+<p>We've set up an integer variable, and assigned a value of 17 to it. 
+The <code>if</code> statement checks for "less than 18". So the message between the curly brackets should be printed out.</p>
+  
+ <h4>If.. Else Statement</h4>
+ <p>Instead of using two <code>if</code> statements, you can use an <code> if...else</code> statement.<br>
+ Here's the structure of an <code>if … else</code> statement:
+<code><pre>
+if ( condition_to_test ) {
+
+}
+else {
+
+}</pre></code>
+
+The first line starts with if, followed by the condition you want to test for. This goes between two round brackets.
+<br>Again, curly brackets are used to section off the different choices. 
+The second choice goes after the word else and between its own curly brackets.</p> 
+<h4><u>If..else - Example</u></h4>
+public class ifElseStatement{
+	public static void main(String[] args){
+	
+		int user = 17;
+		if(user < 18){
+			System.out.println("User is under 18!");
+			}
+		else{
+			System.out.println("User is over 18!");
+			}
+		}
+	}</pre></code>
+<p>So now there are two choices here: either the user is 18 or younger, or the user is older than that. </p>
+<h4>If..else if...else Statements</h4>
+You can test for more than two choices.
+ For example, what if we wanted to test for more age ranges, say 19 to 39, and 40 and over? 
+ For more than two choices, the <code>if … else if</code> statement can be used. The structure of an <code>if… else if</code> is as follows:</p>
+<code><pre>
+if ( condition_one ) {
+
+}
+else if ( condition_two ) {
+
+}
+else {
+
+}</pre></code>
+<p>So the first IF tests for condition number one (18 or under, for example). Next comes else if, followed by a pair of round brackets. The second condition goes between these new round brackets. Anything not caught by the first two conditions will be caught be the final else. Again, code is sectioned off using curly brackets, with each if, else if, or else having its own pair of curly brackets. Miss one out and you'll get error messages.</p>
+ 
+ <h4><u>if..else if Statements - Example</u></h4>
+ <code><pre>
+ public static void main(String[] args){
+ 
+	int user = 21;
+	
+	if(user <= 18){ //if user is less than or equal to 18
+		System.out.println("User is 18 or younger");
+	}
+	else if(user > 18 && user < 40){ //if user is greater than 18 AND less than 40
+		System.out.println("User is between 19 and 39");
+	}
+	else{
+		System.out.println("User id older than 40");
+	}
+}</pre></code>
+
+<h4>Switch Statements</h4>
+<p>Another way to control the flow of your programmes is with something called a switch statement. A switch statement gives you the option to test for a range of values for your variables. They can be used instead of long, complex if … else if statements. The structure of the switch statement is this:</p>
+<code></pre>
+switch ( variable_to_test ) {
+	case value: 
+		code_here;
+		break;
+	case value: 
+		code_here;
+		break;
+	default:
+		values_not_caught_above;
+}</pre></code>
+
+<h4><u>Switch Statement - Example</u></h4>
+<code><pre>
+public static void main(String[] args){
+	
+	int user = 18;
+	
+	switch(user){
+		case 18:
+			System.out.println("You're 18");
+			break;
+		case 19:
+			System.out.println("You're 19");
+			break;
+		case 20:
+			System.out.println("You're 20");
+			break;
+		default:
+			System.out.println("You're not 18,19 or 20");
+		}
+	}</pre></code>
+
+ </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectiontwofour" data-transition="slide" data-icon="arrow-l">Operator Precedence </a></li>
+        <li> <a href="#twoexampleone"  data-transition="slide" data-icon="arrow-r">Example One: Variables</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+</div> 
+<!--Variable Tutorial End-->
+ <!--Variable Examples-->
+ <div data-role="page" id="twoexampleone">
+  <div data-role="header">
+  
+    <h1>Example One: Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h3>Declaring Java Variables </h3>
+		<p>Click Submit and wait to see the expected output.</p>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;public class Variables{&#13;&#10;public static void main(String args[]){&#13;&#10;&#13;&#10;// Declare variables&#13;&#10;int num1 = 5;&#13;&#10;int num2 = 13;&#13;&#10;double num3 = 21.45;&#13;&#10;float num4 = 45.45f;&#13;&#10;char c = 'h';&#13;&#10;boolean b = true;&#13;&#10;&#13;&#10;System.out.println("The value stored in num1 is: ");&#13;&#10;System.out.println(num1);&#13;&#10;System.out.println("The value stored in num2 is: " + num2);&#13;&#10;num1 = 20;&#13;&#10;System.out.println("The value stored in num1 is: " + num1);&#13;&#10;System.out.println("The value stored in num3 is:" + num3);&#13;&#10;num1 = (int)num3;&#13;&#10;System.out.println("The value stored in num1 is:" + num1);&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pagefive" data-transition="slide" data-icon="arrow-l">Decision making in Java </a></li>
+        <li> <a href="#variableexampletwo"  data-transition="slide" data-icon="arrow-r">Example Two</a></li>
+      </ul>
+    </div>
+   </div>
+  </div>
+  
+  <div data-role="page" id="twoexampletwo">
+  <div data-role="header">
+
+    <h1>Example Two: Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h3>Using Operators on Java Variables </h3>
+		<p>Click Submit and wait to see the expected output.</p>
+        <form id="code" action="#" method="post">
+               			<div><label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;public class Operators{&#13;&#10;public static void main(String args[]){&#13;&#10;&#13;&#10;// Declare variables&#13;&#10;int num1 = 5;&#13;&#10;int num2 = 13;&#13;&#10;&#13;&#10;//Perform addition&#13;&#10;num1+=num2;//This is the same as saying num1=num1+num2;&#13;&#10;System.out.println("num1 + num2 =" + num1);&#13;&#10;//Perform Subtraction;&#13;&#10;num1-=num2;//This is same as saying num1=num1-num2;&#13;&#10;System.out.println("num1 -= num2 = " + num1);&#13;&#10;//Perform Multiplication;&#13;&#10;num1 *=num2// This is the same as saying num1=num1*num2&#13;&#10;System.out.println("num1 *= num2 =" + num1);&#13;&#10;// Perform Division;&#13;&#10;num1/=num2 //This is the same as num1=num1/num2;;&#13;&#10;System.out.println("num1 /= num2 = " + num1);&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#twoexampleone" data-transition="slide" data-icon="arrow-l">Example One </a></li>
+        <li> <a href="#sectionthreeone"  data-transition="slide" data-icon="arrow-r">Section Three: Loops</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+  </div>
+  <!-- Tutorial Start-->
+<div data-role="page" id="sectionthreeone">
+  <div data-role="header">
+  
+    <h1>Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p><strong>Loops</strong> allow your program to do the same thing again and again and again and again</p>
+   <p>There are 3 types of loops in Java</p>
+   <li><code>while</code></li>
+   <li><code>for</code></li>
+   <li><code>do...while</code></li>
+   <p>A loop repeatedly executes the same set of instructions until a finishing condition is met.</p>
+   </div>
+   <div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#twoexampletwo" data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#sectionthreetwo"  data-transition="slide" data-icon="arrow-r">While Loops</a></li>
+      </ul>
+    </div>
+   
+  </div>
+</div> 
+   
+   <div data-role="page" id="sectionthreetwo">
+  <div data-role="header">
+  
+    <h1>While Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+ 
+   <p>While loops appear quite similar to if statements, as they also use boolean conditions</p>
+   
+   <p>Initialisation; //control variables etc</p>
+   <code><pre>while(condition)
+	{
+		statement1;
+		statement2;
+		........
+		update;
+	}</pre></code>
+	
+<p>The difference is that as long as the condition being tested is true, whatever is between the braces will 
+execute again and again, possibly forever!</p>
+
+<h4><u>Example: While loop</u></p>
+<code><pre>
+int count = 1; // start count at one 
+while ( count <= 3 ) // loop while count is <= 3 
+	{	 
+		System.out.println("Count is:" + count ); 
+		count = count + 1; // add one to count 
+	}
+</code></pre>
+
+<h5><u>How it works</u></h5>
+<li> The variable count is initially assigned a 
+value of 1. </li>
+<li>The condition ( count <= 3 ) is evaluated 
+as true. Because the condition is true, the 
+block statement following the while is 
+executed.<br>
+ -The current value of count is written out: <br>
+<code>count is 1</code><br>
+ -count is incremented by one, to 2</li>
+ <li>The condition ( count <= 3 ) is re-evaluated and is 
+still true so the block statement following the while is 
+executed. <br>
+ -The current value of count is written out<br>
+<code>count is 2 </code><br></li>
+ -count is incremented by one, to 3. 
+<li> The condition ( count <= 3 ) is evaluated as true so 
+the block statement following the while is executed. <br>
+ -The current value of count is written out.<br>
+<code>count is 3 </code><br>
+ -count is incremented by one, to 4.</li>
+<li>The condition ( count <= 3 ) is evaluated as 
+FALSE. Because the condition is FALSE, 
+the block statement following the while is 
+SKIPPED. </li>
+
+<p>There are three important parts to a loop:</p>
+ <li>The initial value (control variable etc) </li>
+ <li>The condition</li>
+ <li>Update</li>
+
+   </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionthreeone"  data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#sectionthreethree"  data-transition="slide" data-icon="arrow-r">For Loops</a></li>
+      </ul>
+    </div>
+    </div>
+</div> 
+
+<div data-role="page" id="sectionthreethree">
+  <div data-role="header">
+  
+    <h1>For Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p>One of the most common types of loops. <br>
+   You can think of it like this: "Loop FOR a set number of times." <br>
+   The structure of the For Loop is as follows:</p>
+   <code><pre>
+   for ( start_value; end_value; increment_number ) {
+
+			//YOUR_CODE_HERE
+
+		}</pre></code>
+
+	<p>So after the word "for" (in lowercase) you have a pair of round brackets. <br>
+	Inside of the round brackets you need three things:
+	<li>The start value for the loop</li> 
+	<li>The end value for the loop</li>
+	<li>A way to get from one number to another. This is called the increment number</li></p>
+<p> A <i>While Loop</i> can be converted into a <i>for</i> loop. For example, the while loop from the last page can be converted into a for loop:</p>
+<code><pre>
+for(int count = 0; count<10; count++)
+{
+System.out.println(“Count is: ” + count);
+}
+</pre></code>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionthreetwo" data-transition="slide" data-icon="arrow-l">While Loops </a></li>
+        <li> <a href="#sectionthreefour"  data-transition="slide" data-icon="arrow-r">Do..While Loops</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+</div> 
+<div data-role="page" id="sectionthreefour">
+  <div data-role="header">
+ 
+    <h1>do..while Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p>Related to the <strong>while loop</strong> is the do … while loop. It looks like this:</p>
+   <code><pre>
+	int num=1;
+	do
+	{
+	System.out.print(" "+num);
+	num++;
+	}while( num<=5 );
+	Run time display: 1 2 3 4 5
+	</pre></code>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionthreethree" data-transition="slide" data-icon="arrow-l">For Loops</a></li>
+        <li> <a href="#sectionthreefive"  data-transition="slide" data-icon="arrow-r">Constants</a></li>
+      </ul>
+    </div>
+  
+  </div>
+</div> 
+<div data-role="page" id="sectionthreefive">
+  <div data-role="header">
+  
+    <h1>Constants</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>If you have a variable in your program that’s 
+value won’t change then you can use the 
+keyword final to designate it as a constant<br>
+For example, often we will have a maximum 
+or minimum value in a loop</p>
+ <li><code>for (i =0; i< 10; i++){ }</li></code>
+ <li><code>int max = 10; for (i =0; i< max; i++){ }</li></code>
+ <li><code>final int MAX = 10; for (i =0; i< MAX; i++){ }</li></code>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionthreefour"  data-transition="slide" data-icon="arrow-l">Do..While Loops </a></li>
+        <li> <a href="#sectionthreesix"  data-transition="slide" data-icon="arrow-r">Nested Loops</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+</div> 
+
+
+<div data-role="page" id="sectionthreesix">
+  <div data-role="header">
+  
+    <h1>Nested Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>You have seen the advantage of using a loop (iteration) when tasks need to be repeated<br>
+  When one loop is placed inside the body of another loop it is called nesting<br>
+When you "nest" two loops, the outer loop takes control of the number of complete repetitions of the inner loop</p>
+
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionthreefive"  data-transition="slide" data-icon="arrow-l">Constants </a></li>
+        <li> <a href="#threeexampleone"  data-transition="slide" data-icon="arrow-r">Examples :Loops</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+<div data-role="page" id="threeexampleone">
+  <div data-role="header">
+  
+    <h1>Example One: Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div id="wrapper">
+        <h1>Example of a While Loop</h1>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class WhileLoop{&#13;&#10;public static void main(String args[]){&#13;&#10;// This example will print the numbers from 1000 to 0 in reverse order&#13;&#10;&#13;&#10;int counter = 1000;&#13;&#10;while(counter>=0){&#13;&#10;System.out.println(counter);&#13;&#10;counter--;&#13;&#10;}&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionthreefive"  data-transition="slide" data-icon="arrow-l">Nested Loops </a></li>
+        <li> <a href="#threeexampletwo"  data-transition="slide" data-icon="arrow-r">Example Two</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+</div> 
+
+<div data-role="page" id="threeexampletwo">
+  <div data-role="header">
+  
+    <h1>Example of a for Loop</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <div id="wrapper">
+        <h1>Example of a For Loop</h1>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class ForLoop{&#13;&#10;public static void main(String args[]){&#13;&#10;// This example will print the numbers from 1000 to 0 in reverse order&#13;&#10;&#13;&#10;int counter,end;&#13;&#10;for(int counter=1000;int end=0;counter--){&#13;&#10;System.out.println(counter);&#13;&#10;}&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#threeexampleone"  data-transition="slide" data-icon="arrow-l">Example One </a></li>
+        <li> <a href="#sectionfourone"  data-transition="slide" data-icon="arrow-r">Section Four: Strings</a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+<!--Strings Tutorial Start-->
+<div data-role="page" id="sectionfourone">
+  <div data-role="header">
+  
+    <h1>Java- Strings</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>Strings</strong>  which are widely used in Java programming, are a sequence of characters. In the Java programming language, strings are objects.</p>
+<p>The Java platform provides the String class to create and manipulate strings. Strings are the most frequently used class in Java.</p>
+<br>
+<h3>Creating Strings</h3>
+<pre><code>String greeting = "Hello world!";</code></pre>
+<p>Whenever it encounters a string literal in your code, the compiler creates a String object with its value in this case, "Hello world!'.</p><br>
+    <p>Strings are an incredibly common type of data in computers. This page introduces the basics of Java strings: chars, +, length(), and substring().</p>
+	<p>A Java string is a series of characters gathered together, like the word "Hello", or the phrase "practice makes perfect". Create a string in the code by writing its chars out between double quotes.</p>	
+  </div>
+  
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#threeexampleone"  data-transition="slide" data-icon="arrow-l">Back to Loops </a></li>
+        <li> <a href="#sectionfourtwo"  data-transition="slide" data-icon="arrow-r">Strings + Concatenation</a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+
+<div data-role="page" id="sectionfourtwo">
+  <div data-role="header">
+  
+    <h1>String+Concatenation</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>The + (plus) operator between strings puts them together to make a new, bigger string. The bigger string is just the chars of the first string put together with the chars of the second string.</p>
+  <code>String a = "kit" + "ten";  // a is "kitten"</code>
+  <p>Strings are not just made of the letters a-z. Chars can be punctuation and other miscellelaneous chars. For example in the string "hi ", the 3rd char is a space. This all works with strings stored in variables too, like this:</p>
+  <pre><code>String fruit = "apple";
+String stars = "***";
+String a = fruit + stars;  //  a is "apple***"</code></pre>
+
+<p>The String class includes a method for concatenating two strings:</p>
+<pre><code>string1.concat(string2);</code></pre>
+<p>This returns a new string that is string1 with string2 added to it at the end. You can also use the concat() method with string literals, as in:</p>
+<pre><code>"My name is ".concat("Zara");</code></pre>
+  </div>
+
+ <div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#sectionfourone"  data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#sectionfourthree"  data-transition="slide" data-icon="arrow-r">String Length</a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+  
+  <div data-role="page" id="sectionfourthree">
+  <div data-role="header">
+ 
+    <h1>String Length</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <p>The "length" of a string is just the number of chars in it. <br>
+	So "hi" is length 2 and "Hello" is length 5. </p>
+	<p>The length() method on a string returns its length, like this:</p>
+	<pre><code>String a = "Hello";
+int len = a.length();  // len is 5</code><pre>
+  </div>
+
+ <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionfourtwo" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Concatenating</a></li>
+  <li> <a href="#sectionfourfour" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">String Index Numbers</a></li>
+   </ul>
+  </div>
+  </div>
+  </div>
+  
+    <div data-role="page" id="sectionfourfour">
+  <div data-role="header">
+  
+    <h1>String Index Numbers</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>The chars in a string are identified by "index" numbers.<br>
+  In "Hello" the leftmost char (H) is at index 0, the next char (e) is at index 1, and so on.<br>
+  The index of the last char is always one less than the length. In this case the length is 5 and 'o' is at index 4. Put another way, the chars in a string are at indexes 0, 1, 2, .. up through length-1.<br> We'll use the index numbers to slice and dice strings with substring() in the next section.</p>
+    <img src="stringindex.png" alt="index" height="80" width="120">
+  </div>
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionfourthree" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">String Length</a></li>
+  <li> <a href="#sectionfourfive" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Substring</a></li>
+   </ul>
+  </div>
+  </div>
+
+  </div>
+    <div data-role="page" id="sectionfourfive">
+  <div data-role="header">
+
+    <h1>SubString()</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>The substring() method picks out a part of string using index numbers to identify the desired part. 
+  The simplest form, substring(int start) takes a start index number and returns a new string made of the chars starting at that index and running through the end of the string:</p>
+    <img src="stringindex.png" alt="index" height="80" width="120">
+	<pre></code>String str = "Hello";
+String a = str.substring(1);  // a is "ello" (i.e. starting at index 1)
+String b = str.substring(2);  // b is "llo"
+String c = str.substring(3);  // c is "lo"</code></pre>
+<p>Above <code>str.substring(1)</code> returns "ello", picking out the part of "Hello" which begins at index 1 (the "H" is at index 0, the "e" is at index 1).</p>
+ <p>In the next will discuss the other methods in the String class and describe how they work.</p>
+ </div>
+  
+ <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionfourfour" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">String Index</a></li>
+  <li> <a href="#sectionfoursix" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Other Methods</a></li>
+   </ul>
+  </div>
+  </div>
+    </div>
+    <div data-role="page" id="sectionfoursix">
+	
+  <div data-role="header">
+  
+    <h1>Other String Methods</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+  <p>The table below describes the various methods in the <code>String</code> class. </p>
+  <div data-role="main" class="ui-content">
+  <table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Method Name</th>
+          <th>Meaning</th>
+          <th>Returns</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>equals(str)</code></td>
+          <td>returns <code>true</code>if the passed <code>String str</code> has the same characters as the reciever string object</td>
+          <td>a <code>boolean</code></td>   
+        </tr>
+        <tr>
+          <td><code>length()</code></td>
+          <td>returns the number of characters in a <code>String</code></td>
+          <td>an <code>int</code></td>
+        </tr>
+        <tr>
+          <td><code>charAt(i)</code></td>
+          <td>returns the character at the <code>int</code> index <code>i</code> in the <code>String</code>; the index begins at zero</td>
+          <td>a <code>char</code> (or an error if <code>i</code> is out of range)</td>
+              </tr>
+        <tr>
+          <td><code>indexOf(str)</code></td>
+          <td>returns the starting index of the string <code>str</code> within the receiver object, or -1 if not found</td>
+          <td>an <code>int</code></td>
+          
+        </tr>
+		<tr>
+          <td><code>substring(int1,int2)</code></td>
+          <td>returns the substring of the receiver string,staring at <code>int1</code> and finishing at <code>int2-1</code></td>
+          <td>a <code>String</code>(Or an error if the indexes are out of range)</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  
+ </div>
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionfourfive" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Substring()</a></li>
+  <li> <a href="#fourexampleone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Strings: Examples</a></li>
+   </ul>
+  </div>
+  </div>
+   </div>
+ <!--Strings Tutorial End-->
+ <!--String Example-->
+ <div data-role="page" id="stringexampleone">
+  <div data-role="header">
+  
+    <h1>Example: Strings</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h1>Try it here</h1>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;System.out.println("This is awesome");&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionfoursix" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#fourexampletwo" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">E</a></li>
+   </ul>
+  </div>
+  </div>
+   </div>
+   <div data-role="page" id="fourexampletwo">
+  <div data-role="header">
+ 
+    <h1>Example: Strings</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h1>Try it here</h1>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;System.out.println("This is awesome");&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+</div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#fourexampleone" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionfiveone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Section Five: User Input</a></li>
+   </ul>
+  </div>
+  </div>
+  </div>
+  <!-- Tutorial Start-->
+<div data-role="page" id="sectionfiveone">
+  <div data-role="header">
+  
+    <h1>Keyboard Input</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>Up to now we have declared variables at the start of every program<br>
+Sometimes we don’t know the value of a variable until the program runs, e.g. until a user provides input.<br>
+Java 1.5 introduced the Scanner class which simplifies console input. <br>
+It can also be used to read from files, keyboard and Strings (among 
+other sources).</p>
+
+<p>To get keyboard input you need three things…<br>
+ <strong>1.</strong>The Scanner class is defined in the java.util package. So you 
+must have the following statement at the top of your program<br>
+-<code>import java.util.*; <br>
+-import java.util.Scanner;</code><br>
+<p>This tells java that you want to use a particular class in a particular library - the Scanner class, which is located in the java.util library.</p>
+<strong>2.</strong> Need to create an instance of the Scanner class<br>
+<code>Scanner sc = new Scanner(System.in)</code><br>
+<p>This creates an object from the Scanner class. (A class is just a bunch of code. It doesn't do anything until you create a new object from it.)</p>
+
+<strong>3.</strong> Need to call one or more Scanner methods to read in data 
+input<br>
+<p>To get the user input, you can call into action one of the many methods available to your new Scanner object. One of these methods is called next. This gets the next string of text that a user types on the keyboard:</p>
+<h4>Important Methods</h4>
+<li>nextInt() // reads in the next token as an int</li>
+<li> nextFloat() // reads in the next token as an </li>
+<li>nextDouble() // reads in the next token as an double</li>
+<li>nextLine() // reads in the next token as an String</li>
+<li>hasNextInt() //returns true if there is another int to read in</li>
+<li>hasNextFloat() //returns true if there is another float to read in</li>
+<li>hasNextDouble() //returns true if there is another double to read in</li>
+<li>hasNextLine() //returns true if there is another String to read in</li>
+<li>Look at the API for a full list of methods</li>
+
+<h4><u>Example of a simple Scanner class</u></h4>
+<code><pre>
+import java.util.Scanner;
+
+public class StringVariables{
+		
+		public static void main(String[] args){
+		
+			Scanner userInput = new Scanner(System.in);
+			
+			String firstname;
+			System.out.println("Enter your first name");
+			firstname=userInput.nextLine();
+			}
+		}</pre></code>
+<p>When you run your code Java will pause until you enter something on your keyboard. <br>
+After you hit the enter key, java will take whatever was typed and store it in the variable name to the left of the equals sign. For us, this was the variable called firstname.</p>
+   
+  </div>
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#fourexampletwo" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#fiveexampleone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Examples:Scanner</a></li>
+   </ul>
+  </div>
+  </div>
+</div> 
+<div data-role="page" id="fiveexampleone">
+  <div data-role="header">
+
+    <h1>Example One</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div id="wrapper">
+        <h4>Example of a full Scanner class</h4>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;import java.util.Scanner;&#13;&#10;class Userinput{&#13;&#10;oublic static void main(String[] args){&#13;&#10;String number, inter, op, remaining; // Create Strings&#13;&#10; String number, inter, op, remaining; // Create Strings&#13;&#10;Scanner scan = new Scanner( System.in ); // Create a scanner&#13;&#10;System.out.print( "Enter an Irish mobile phone number > " &#13;&#10;number = scan.nextLine(); // Read in number&#13;&#10;while(number.length()!= 12) // Check if number is not of length 12&#13;&#10;{&#13;&#10;System.out.print( "Enter an Irish mobile phone number > " );&#13;&#10;number = scan.nextLine();&#13;&#10;System.out.println("You entered " + number);&#13;&#10;enter = number.substring(0,3);&#13;&#10;System.out.println("The international code is " + inter);&#13;&#10;op = number.substring(3,5);&#13;&#10;System.out.println("The operator code is " + op);&#13;&#10;remaining = number.substring(5);&#13;&#10;System.out.println("The number is " + remaining );&#13;&#10;System.out.println("The complete number is (" + inter + ") " + op + " " + remaining);&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+  
+			</div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionfiveone" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionsixone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Section Six:Arrays</a></li>
+   </ul>
+  </div>
+  </div>
+  </div> 
+  <!-- Tutorial Start-->
+<div data-role="page" id="sectionsixone">
+  <div data-role="header">
+  
+    <h1>Arrays</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <h4>What is an array?</h4>
+   <p>An array is a collection of variables.<br>
+Arrays have three important properties:<br>
+1. represent a group of related data<br>
+2. all data within an array have the same type<br>
+3. size of an array is fixed once it is created</p>
+
+<h4>Declaring an Array</h4>
+<p>You need to give the array a name and specify its type:<br>
+ <code>int myFirstArray[];</code><br>
+ No memory is allocated for the array here (can’t as it doesn’t know 
+how big the array is).</p>
+<p>To give the array a size (and allocate memory):<br>
+ <code>myFirstArray = new int [5];</code><br>
+This specifies that the number of elements (items) in the array is 5</p>
+<p>We can also declare and allocate memory in one line:<br>
+ <code>int myFirstArray[] = new int [5];</code></p>
+ <p>You can use a constant to set the size of the array<br>
+<code>final int MAX = 10;<br>
+int array2[] = new int [ MAX ];</code> // [] in different position</p>
+
+<h4>Inititalising an Array</h4>
+<p><code>int myFirstArray[] = { 1, 1, 1, 1, 1 };</code> // declare and initialise together</p>
+<p>// or initialise afterwards.<br>
+<code>int myFirstArray [] = new int [ 5 ];<br>
+for (int i = 0 ; i <= 4 ; i++ )
+{
+myFirstArray[ i ] = 1 ;
+}</code></p>
+  </div>
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#fiveexampleone" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionsixtwo" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Array Index</a></li>
+   </ul>
+  </div>
+  </div>
+
+</div> 
+<div data-role="page" id="sectionsixtwo">
+  <div data-role="header">
+  
+    <h1>Array Indexing</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p>In Java, an arrays’ elements start out at index 0<br>For example:<code> int array [] = {18, 16, 14,12, 10, 8}; </code></p>
+   <table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Value</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>18</td>
+                 </tr>
+        <tr>
+          <td><code>1</code></td>
+          <td>16 </td>
+          
+        </tr>
+        <tr>
+          <td><code>2</code></td>
+          <td>14</td>
+                        </tr>
+        <tr>
+          <td><code>3</code></td>
+          <td>12</td>
+          
+          
+        </tr>
+		<tr>
+          <td><code>4</code></td>
+          <td>10</td>
+          
+        </tr>
+		<tr>
+          <td><code>5</code></td>
+          <td>8</td>
+          
+        </tr>
+     
+		
+	  </tbody>
+    </table>
+<p>Can change the value in an array easily: <br>
+<code>array[5] = 9;</code><br>
+Can get the value stored in the array easily:<br>
+<code>System.out.println ("The value at the fifth position is " + array[ 4 ] );</code></p>
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionsixone" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionsixthree" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">More on Arrays</a></li>
+   </ul>
+  </div>
+  </div>
+  </div> 
+<div data-role="page" id="sectionsixthree">
+  <div data-role="header">
+  
+    <h1>Arrays - More Detail</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p>To get the length of an array use .length<br>
+ <code>nameOfArray.length</code><br>
+Can use array elements in expressions E.g.<br>
+<code>int total = 0 ;<br>
+Total = myFirstArray[ 0 ] + <br>
+myFirstArray [ 1 ] +<br>
+myFirstArray [ 2 ] + …etc…;</code><br>
+You can ask the user to enter the size of array and enter values into 
+the array (v. useful).<br>
+We can also randomly generate numbers to put in to our array</p>
+  </div>
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionsixtwo" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionsixfour" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Randon Numbers</a></li>
+   </ul>
+  </div>
+  </div>
+</div> 
+<div data-role="page" id="sectionsixfour">
+  <div data-role="header">
+  
+    <h1>Random Numbers</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+   <p>There are a number of ways to generate 
+random numbers.<br>
+We will look at generating random integers:<br>
+We need to import the following:<br>
+ <code>import java.util.Random;</code><br>
+ And then to do the following:<br>
+ <code>Random randomGenerator = new Random();</code></p>
+ <p><code>randomInt = randomGenerator.nextInt(1000);</code><br>
+Will generate a random number between 0 and 1000<br>
+<code><pre>for(int i = 0; i < array.length; i++)
+{
+randomInt = randomGenerator.nextInt(1000);
+array[i] = randomInt;
+} // end for</pre></code></p>
+
+  </div>
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionsixthree" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionsixfive" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Arrays and Loops</a></li>
+   </ul>
+  </div>
+  </div>
+</div> 
+<div data-role="page" id="sectionsixfive">
+  <div data-role="header">
+      <h1>Arrays and Loops</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>Loop can be used to print the contents of an array<br>
+<code><pre>
+int array []= new int [ 5 ];
+for (int i = 0 ; i < array.length; i++ )
+{
+System.out.println (“Array element " + i + " is equal to " + array[i]);
+} // end for</pre></code><br>
+If you try to access a value beyond the size of the array you will 
+generate an out of bounds error</p>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionsixfour" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sixexampleone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Array Example</a></li>
+   </ul>
+  </div>
+  </div>
+</div> 
+
+<div data-role="page" id="sixexampleone">
+  <div data-role="header">
+  
+    <h1>Example One: Arrays</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h3>Asking a user for array entries</h3>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;import java.util.Scanner;&#13;&#10;class arrays{&#13;&#10;public static void main(String args[]){&#13;&#10;// This example will ask the user for the array elements&#13;&#10;&#13;&#10;Scanner scan = new Scanner(System.in);int size = 0;&#13;&#10;System.out.println("What size array would you like?");&#13;&#10;size = scan.nextInt();&#13;&#10;&#13;&#10;int arr[]=new int[size];&#13;&#10;&#13;&#10;for(int i=0;i<ar.length;i++)&#13;&#10;{&#13;&#10;System.out.println("Please enter a value for element " + i + " ");&#13;&#10;ar[i]=scan.nextInt();&#13;&#10;}&#13;&#10;System.out.println("The array elements are: ");&#13;&#10;for(int j=0;j<ar.length;j++)&#13;&#10;{&#13;&#10;System.out.println(ar[j]+" ");&#13;&#10;}&#13;&#10;}&#13;&#10;}</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="#sectionsixfive" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Back</a></li>
+  <li> <a href="#sectionsevenone" data-transition="slide" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">Section Seven: Methods</a></li>
+   </ul>
+  </div>
+  </div>
+ </div> 
+<!-- Tutorial Start-->
+<div data-role="page" id="sectionsevenone">
+  <div data-role="header">
+ 
+    <h1>Methods</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="grid">Navigation</a></li>
+		<li><a href="#pageone"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p>To date we have seen a number of methods in Java without really knowing what they were:<br>
+ <code>public static void main(String args[])</code><br>
+ You have used methods with Strings e.g. <br>
+<code>.charAt(), .indexOf(), .toUpperCase();</code><br>
+A method can return a value e.g. charAt returns a character<br>
+If a method does not return a value, its return type is void.<br>
+A method can take 0 or more parameters.</p>
+ 
+<h4>Calling Methods</h4>
+<p>In Java, a method is a piece of code that has been given 
+a name.<br>
+To call a method you need:
+ An object, The method name, Some parameters (0 or more)<br>
+Example:<br>
+ <code>object.methodName(parameter1, parameter2)<br>
+ scan.nextLine(); </code><br>
+Very often a method will return a value of some type<br>
+ <code>s1.charAt(5);</code></p
+ 
+ <h4>Method Signature</h4>
+ <p>The method signature tells us a lot – the 
+name of the method, the input parameters 
+and the return type<br>
+For Example:<br>
+<code>public static void multiply(int x, int y)</code><br>
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+		<th>         </th>
+          <th>Return Type</th>
+          <th>Method Name</th>
+          <th>Input Parameters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>public static</code></td>
+          <td><code>void </code></td>
+          <td><code>multiply</code></td>   
+		  <td><code>(int x, int y)</code></td>   
+        </tr>
+        
+      </tbody>
+    </table>
+<h5>How to call the Method</h5>
+<p>To call the (use the code within the) method <br>
+<code>public static void multiply(int x, int y)</code><br>
+We do:<br>
+<code>multiply(5,7);</code><br></p>
+
+ 
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="sixexampleone"data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="multiplechoiceone" data-transition="slide" data-icon="arrow-r">Go to Quiz Section</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+      <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="javascript/index.js"></script>
+    </body>
+</html>

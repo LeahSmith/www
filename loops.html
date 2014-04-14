@@ -11,56 +11,10 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <script src="javascript/script.js"></script>
-<script  var lineObjOffsetTop = 2;
-   
-   function createTextAreaWithLines(id)
-   {
-      var el = document.createElement('DIV');
-      var ta = document.getElementById(id);
-      ta.parentNode.insertBefore(el,ta);
-      el.appendChild(ta);
-      
-      el.className='textAreaWithLines';
-      el.style.width = (ta.offsetWidth + 30) + 'px';
-      ta.style.position = 'absolute';
-      ta.style.left = '30px';
-      el.style.height = (ta.offsetHeight + 2) + 'px';
-      el.style.overflow='hidden';
-      el.style.position = 'relative';
-      el.style.width = (ta.offsetWidth + 30) + 'px';
-      var lineObj = document.createElement('DIV');
-      lineObj.style.position = 'absolute';
-      lineObj.style.top = lineObjOffsetTop + 'px';
-      lineObj.style.left = '0px';
-      lineObj.style.width = '27px';
-      el.insertBefore(lineObj,ta);
-      lineObj.style.textAlign = 'right';
-      lineObj.className='lineObj';
-      var string = '';
-      for(var no=1;no<200;no++){
-         if(string.length>0)string = string + '<br>';
-         string = string + no;
-      }
-      
-      ta.onkeydown = function() { positionLineObj(lineObj,ta); };
-      ta.onmousedown = function() { positionLineObj(lineObj,ta); };
-      ta.onscroll = function() { positionLineObj(lineObj,ta); };
-      ta.onblur = function() { positionLineObj(lineObj,ta); };
-      ta.onfocus = function() { positionLineObj(lineObj,ta); };
-      ta.onmouseover = function() { positionLineObj(lineObj,ta); };
-      lineObj.innerHTML = string;
-      
-   }
-   
-   function positionLineObj(obj,ta)
-   {
-      obj.style.top = (ta.scrollTop * -1 + lineObjOffsetTop) + 'px';   
-   
-      
-   }
+
    
    
-</script>
+
 <style>
 
 th
@@ -407,7 +361,7 @@ When you "nest" two loops, the outer loop takes control of the number of complet
   </div>
   <div data-role="main" class="ui-content">
    <div id="wrapper">
-        <h1>Example of a While Loop</h1>
+        <h1>Example of a For Loop</h1>
         <form id="code" action="#" method="post">
                
 			<div>

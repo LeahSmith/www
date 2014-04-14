@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script> 
+$(function() {
+  $("li[id]").hide();
+  $("ul li a").click(function() { 
+      $(this).parent().next().toggle("slow").siblings("[id]").hide("fast");
+  });
+});
+</script>
+</head>
+</body>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/app.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+
+      <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
