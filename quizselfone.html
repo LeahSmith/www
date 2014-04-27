@@ -16,8 +16,8 @@
                       background:#d3d3d3;
                         }
             #ccontainer{
-                        width:400px;
-                        margin:40px 0px 15px 0px;
+                        width:350px;
+                        margin:30px 0px 15px 0px;
                         
                          }
             #myCanvas {
@@ -114,12 +114,12 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
 
       GetFeedback = function(a){
                       if(a==CorrectAnswer){
-                              context.drawImage(quizbg, 0,400,75,70,480,110+(90*(a-1)),75,70);
+                              context.drawImage(quizbg, 0,400,75,70,280,110+(90*(a-1)),75,70);
                               rightanswers++;
                                      
                         }
                         else{
-                              context.drawImage(quizbg, 75,400,75,70,480,110+(90*(a-1)),75,70);
+                              context.drawImage(quizbg, 75,400,75,70,280,110+(90*(a-1)),75,70);
                               wronganswers++;
                         }
                         lock=true;
