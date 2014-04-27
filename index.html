@@ -50,6 +50,14 @@ color:#9ab9cf;
 }
   
 </style>
+<script>
+function testButton1 (form){
+        alert (form.radio4.checked);
+}
+function testButton2 (form){
+        alert (form.radio5.checked);
+}
+</script>
 <div data-role="page" id="pageone">
 <div id="logo"><img src="java_icon.png" alt="Java" width="300" height="200" ></div>
 </head>
@@ -69,14 +77,6 @@ color:#9ab9cf;
 					<p class="content"><a href="#sectiononesix">6. Dealing with Errors</a></p>
 					</div>
 					<div data-role="collapsible">
-					<h2><div class="subheader">Section Two:Variables</div></h2>
-					<p class="content"><a href="#sectiontwoone">1. Declaring Variables</a></p>
-					<p class="content"><a href="#sectiontwotwo">2. Data Types</a></p>
-					<p class="content"><a href="#sectiontwothree">3. Operators in Java</a></p>
-					<p class="content"><a href="#sectiontwofour">4. Operator Precedence</a></p>
-					<p class="content"><a href="#sectiontwofive">5. Decision Making in Java</a></p>
-					
-					</div><div data-role="collapsible">
 					<h2><div class="subheader">Section Two:Variables</div></h2>
 					<p class="content"><a href="#sectiontwoone">1. Declaring Variables</a></p>
 					<p class="content"><a href="#sectiontwotwo">2. Data Types</a></p>
@@ -155,7 +155,7 @@ color:#9ab9cf;
 					<div data-role="collapsible">
 					<h2 ><div class="mheader">Quiz Yourself</div></h2>
 					<p class="content"><a href="quizselfone.html#quizmenu"rel="external">Multiple Choice Quiz</a></p>
-					<p class="content"><a href="">What is the expected output of this code?</a></p>
+					<p class="content"><a href="#outputone">What is the expected output of this code?</a></p>
 					<p class="content"><a href="">Find the errors in the code snippet</a></p>
 										</div>
 					<div data-role="collapsible">
@@ -177,9 +177,18 @@ color:#9ab9cf;
 	</div>
 	
 	<div data-role="page" id="sectiononeone">
-	 <div data-role="panel" id="myPanel" data-swipe-close="false" > 
-    <h2>Navigation</h2>
-    <p>Some text in the panel..</p>
+	 <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononesix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
   </div> 
   <div data-role="header">
       <h1>Introduction to Java</h1>
@@ -248,9 +257,23 @@ Should you not see the result of the compiled/executed code, you can re-try to c
   </div>
   </div>
 <div data-role="page" id="sectiononetwo">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononesix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
+  </div> 
   <div data-role="header">
   
     <h1>Getting started with Java</h1>
+	
 	<div data-role="navbar" data-iconpos="top">
       <ul>
         <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
@@ -299,6 +322,19 @@ machine</p>
 </div> 
   
   <div data-role="page" id="sectiononethree">
+   <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononesix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
+  </div> 
   <div data-role="header">
   
     <h1>Basic Syntax</h1>
@@ -372,6 +408,19 @@ The diagram below illustrates how blocks of code can be nested<br></p>
 </div> 
 
 <div data-role="page" id="sectiononefour">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononesix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
+  </div> 
   <div data-role="header">
   
     <h1>Writing your first program</h1>
@@ -424,6 +473,19 @@ public class Helloworld
   </div>
 </div> 
 <div data-role="page" id="sectiononefive">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononefsix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
+  </div> 
   <div data-role="header">
   
     <h1>Important Points</h1>
@@ -460,6 +522,19 @@ program easier to read!</li>
 </div> 
 
 <div data-role="page" id="sectiononesix">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononefsix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
+  </div> 
   <div data-role="header">
   
     <h1>Errors</h1>
@@ -513,6 +588,19 @@ during the commissioning phase of your program.</li>
 
 
 <div data-role="page" id="oneexampleone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiononeone">What is Java?</a></li>
+	<li><a href="#sectiononetwo">Getting Started with Java</a></li>
+	<li><a href="#sectiononethree">Basic Syntax</a></li>
+	<li><a href="#sectiononefour">Writing your first program</a></li>
+	<li><a href="#sectiononefive">Important Points</a></li>
+	<li><a href="#sectiononefsix">Errors</a></li>
+	<li><a href="#oneexampleone">Examples</a></li>
+	<li><a href="sectiononequiz.html" rel="external">Multiple Choice Quiz: Intro to Java</a></li>
+</ul>
+  </div> 
   <div data-role="header">
   
     <h1>Example One: My first Program</h1>
@@ -560,12 +648,26 @@ during the commissioning phase of your program.</li>
  <div data-role="navbar">
       <ul>
   <li><a href="#sectiononesix" data-transition="slide" data-icon="arrow-l">Dealing with Errors</a></li>
-  <li> <a href="#sectiontwoone" data-transition="slide" data-icon="arrow-r">Section Two: Variables</a></li>
+  <li> <a href="sectiononequiz.html" rel="external" data-transition="slide" data-icon="arrow-r">MCQ: Intro to Java</a></li>
    </ul>
    </div>
   </div>
 </div> 
 <div data-role="page" id="sectiontwoone">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	
+	</ul>
+  </div>
   <div data-role="header">
     <h1>Variables</h1>
 	<div data-role="navbar" data-iconpos="top">
@@ -620,6 +722,19 @@ num6 = 15;</code><br>
       </div>
 </div> 
 <div data-role="page" id="sectiontwotwo">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	</ul>
+  </div>
   <div data-role="header">
     <h1>Data Types</h1>
 	<div data-role="navbar" data-iconpos="top">
@@ -680,7 +795,7 @@ num6 = 15;</code><br>
         </tr>
       <tr>
           <td><code>char</code></td>
-          <td>a unicode character, e.g. ‘a’, ‘b’, ‘c’</td>
+          <td>a unicode character, e.g. 'a' ,'b', 'c'</td>
           <td>16</td>
         </tr>
 		<tr>
@@ -697,7 +812,7 @@ num6 = 15;</code><br>
 <ol data-role="listview">
       <li><b>Type:</b> Describes how the data in memory is to be interpreted<br>(e.g. Integer, String, Floating point number)</li>
       <li>Name:</b> This is used to refer to it in the program (e.g. x,y), 
-sometimes we use the word “identifier” instead of name</li>
+sometimes we use the word 'identifier' instead of name</li>
       <li><b>Value:</b> This is the contents of the memory interpreted in the 
 context of the type (e.g. 1, Hello World, 5.63)</li>
 	    </ol>
@@ -715,6 +830,19 @@ context of the type (e.g. 1, Hello World, 5.63)</li>
 </div> 
 
 <div data-role="page" id="sectiontwothree">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	</ul>
+  </div>
   <div data-role="header">
        <h1>Java Operators</h1>
 	<div data-role="navbar" data-iconpos="top">
@@ -846,6 +974,19 @@ Assume variable A holds 10 and variable B holds 20, then:</p>
   </div>
 </div> 
 <div data-role="page" id="sectiontwofour">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	</ul>
+  </div>
   <div data-role="header">
  
     <h1>Operator Precedence</h1>
@@ -900,6 +1041,20 @@ time)</li>
   </div>
 </div> 
 <div data-role="page" id="sectiontwofive">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	</ul>
+	
+  </div>>
   <div data-role="header">
     <h1>Decision making in Java</h1>
 	<div data-role="navbar" data-iconpos="top">
@@ -912,7 +1067,7 @@ time)</li>
   </div>
   <div data-role="main" class="ui-content">
    <p>There are two types of decision making statements in Java. They are:</p>
-   <li><code>if</code>statments</li>
+   <li><code>if</code> statements</li>
    <li><code>switch</code>statements</li>
    <h4>If Statements</h4>
    <p> An if statements tells your program to execute a certain section of code only if a particular test evaluates to true.</p>
@@ -945,7 +1100,7 @@ The <code>if</code> statement checks for "less than 18". So the message between 
   
  <h4>If.. Else Statement</h4>
  <p>Instead of using two <code>if</code> statements, you can use an <code> if...else</code> statement.<br>
- Here's the structure of an <code>if … else</code> statement:
+ Here's the structure of an <code>if ... else</code> statement:
 <code><pre>
 if ( condition_to_test ) {
 
@@ -1053,6 +1208,19 @@ public static void main(String[] args){
 <!--Variable Tutorial End-->
  <!--Variable Examples-->
  <div data-role="page" id="twoexampleone">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Example One: Variables</h1>
@@ -1106,6 +1274,19 @@ public static void main(String[] args){
   </div>
   
   <div data-role="page" id="twoexampletwo">
+  <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectiontwoone">Declaring Variables</a></li>
+	<li><a href="#sectiontwotwo">Data Types</a></li>
+	<li><a href="#sectiontwothree">Operators in Java</a></li>
+	<li><a href="#sectiontwofour">Operator Precedence</a></li>
+	<li><a href="#sectiontwofive">Decision making in Java</a></li>
+	<li><a href="#twoexampleone">Example One: Variables</a></li>
+	<li><a href="#twoexampletwo">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	</ul>
+  </div>
   <div data-role="header">
 
     <h1>Example Two: Variables</h1>
@@ -1149,7 +1330,7 @@ public static void main(String[] args){
 <div data-role="navbar">
       <ul>
         <li><a href="#twoexampleone" data-transition="slide" data-icon="arrow-l">Example One </a></li>
-        <li> <a href="#sectionthreeone"  data-transition="slide" data-icon="arrow-r">Section Three: Loops</a></li>
+        <li> <a href="sectiontwoquiz.html" rel="external"  data-transition="slide" data-icon="arrow-r">Section Three: Loops</a></li>
       </ul>
     </div>
  
@@ -1157,6 +1338,20 @@ public static void main(String[] args){
   </div>
   <!-- Tutorial Start-->
 <div data-role="page" id="sectionthreeone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Loops</h1>
@@ -1188,6 +1383,20 @@ public static void main(String[] args){
 </div> 
    
    <div data-role="page" id="sectionthreetwo">
+   <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>While Loops</h1>
@@ -1268,6 +1477,20 @@ SKIPPED. </li>
 </div> 
 
 <div data-role="page" id="sectionthreethree">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>For Loops</h1>
@@ -1314,6 +1537,20 @@ System.out.println(“Count is: ” + count);
   </div>
 </div> 
 <div data-role="page" id="sectionthreefour">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
  
     <h1>do..while Loops</h1>
@@ -1348,6 +1585,20 @@ System.out.println(“Count is: ” + count);
   </div>
 </div> 
 <div data-role="page" id="sectionthreefive">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Constants</h1>
@@ -1383,6 +1634,20 @@ or minimum value in a loop</p>
 
 
 <div data-role="page" id="sectionthreesix">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Nested Loops</h1>
@@ -1414,6 +1679,20 @@ When you "nest" two loops, the outer loop takes control of the number of complet
 
 
 <div data-role="page" id="threeexampleone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Example One: Loops</h1>
@@ -1466,6 +1745,20 @@ When you "nest" two loops, the outer loop takes control of the number of complet
 </div> 
 
 <div data-role="page" id="threeexampletwo">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionthreeone">Introduction to Loops</a></li>
+	<li><a href="#sectionthreetwo">While Loops</a></li>
+	<li><a href="#sectionthreethree">For Loops</a></li>
+	<li><a href="#sectionthreefour">Do...while Loops</a></li>
+	<li><a href="#sectionthreefive">Constants</a></li>
+	<li><a href="#sectionthreesix">Nested Loops</a></li>
+	<li><a href="#threeexampleone">Example One: Loops</a></li>
+	<li><a href="#threeexampletwo">Example Two: Loops</a></li>
+	<li><a href="sectionthreequiz.html" rel="external">Multiple Choice Quiz: Loops</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Example of a for Loop</h1>
@@ -1511,13 +1804,27 @@ When you "nest" two loops, the outer loop takes control of the number of complet
 <div data-role="navbar">
       <ul>
         <li><a href="#threeexampleone"  data-transition="slide" data-icon="arrow-l">Example One </a></li>
-        <li> <a href="#sectionfourone"  data-transition="slide" data-icon="arrow-r">Section Four: Strings</a></li>
+        <li> <a href="sectionthreequiz.html" rel="external"  data-transition="slide" data-icon="arrow-r">MCQ:Loops</a></li>
       </ul>
     </div>
     </div>
 </div>
 <!--Strings Tutorial Start-->
 <div data-role="page" id="sectionfourone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Java- Strings</h1>
@@ -1551,6 +1858,21 @@ When you "nest" two loops, the outer loop takes control of the number of complet
 </div>
 
 <div data-role="page" id="sectionfourtwo">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+	
+  </div>
   <div data-role="header">
   
     <h1>String+Concatenation</h1>
@@ -1587,6 +1909,20 @@ String a = fruit + stars;  //  a is "apple***"</code></pre>
 </div>
   
   <div data-role="page" id="sectionfourthree">
+  <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
   <div data-role="header">
  
     <h1>String Length</h1>
@@ -1617,6 +1953,20 @@ int len = a.length();  // len is 5</code><pre>
 
   
     <div data-role="page" id="sectionfourfour">
+	<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>String Index Numbers</h1>
@@ -1645,6 +1995,20 @@ int len = a.length();  // len is 5</code><pre>
 </div>
   
     <div data-role="page" id="sectionfourfive">
+	<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
   <div data-role="header">
 
     <h1>SubString()</h1>
@@ -1679,6 +2043,20 @@ String c = str.substring(3);  // c is "lo"</code></pre>
 
  
     <div data-role="page" id="sectionfoursix">
+	<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
 	  <div data-role="header">
   
     <h1>Other String Methods</h1>
@@ -1747,6 +2125,20 @@ String c = str.substring(3);  // c is "lo"</code></pre>
  <!--Strings Tutorial End-->
  <!--String Example-->
  <div data-role="page" id="fourexampleone">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Example: Strings</h1>
@@ -1798,6 +2190,20 @@ String c = str.substring(3);  // c is "lo"</code></pre>
    </div>
    
    <div data-role="page" id="fourexampletwo">
+   <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfourone">Java Strings</a></li>
+	<li><a href="#sectionfourtwo">String + Concatentation</a></li>
+	<li><a href="#sectionfourthree">String Length()</a></li>
+	<li><a href="#sectionfourfour">String Index Numbers</a></li>
+	<li><a href="#sectionfourfive">SubString()</a></li>
+	<li><a href="#sectionfoursix">Other Methods</a></li>
+	<li><a href="#fourexampleone">Example One: Strings</a></li>
+	<li><a href="#fourexampletwo">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
   <div data-role="header">
  
     <h1>Example: Strings</h1>
@@ -1842,7 +2248,7 @@ String c = str.substring(3);  // c is "lo"</code></pre>
  <div data-role="navbar">
  <ul>
   <li><a href="#fourexampleone"  data-transition="slide" data-icon="arrow-l">Back</a></li>
-  <li> <a href="#sectionfiveone"  data-transition="slide" data-icon="arrow-r">Section Five: User Input</a></li>
+  <li> <a href="sectionfourquiz.html" rel="external"  data-transition="slide" data-icon="arrow-r">MCQ: Strings</a></li>
    </ul>
   </div>
   </div>
@@ -1850,6 +2256,15 @@ String c = str.substring(3);  // c is "lo"</code></pre>
   
   <!-- Tutorial Start-->
 <div data-role="page" id="sectionfiveone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfiveone">User Input</a></li>
+	<li><a href="#fourexampleone">Example One: Scanner</a></li>
+	<li><a href="sectionfivequiz.html" rel="external">Multiple Choice Quiz: Scanner Class</a></li>
+	
+	</ul>
+  </div>
   <div data-role="header">
   
     <h1>Keyboard Input</h1>
@@ -1911,18 +2326,29 @@ public class StringVariables{
 <p>When you run your code Java will pause until you enter something on your keyboard. <br>
 After you hit the enter key, java will take whatever was typed and store it in the variable name to the left of the equals sign. For us, this was the variable called firstname.</p>
    </div>
-  </div>
-  <div data-role="footer"data-position="fixed">
+  
+ <div data-role="footer"data-position="fixed">
  <div data-role="navbar">
  <ul>
   <li><a href="#fourexampletwo"  data-transition="slide" data-icon="arrow-l">Back</a></li>
-  <li> <a href="#fiveexampleone"  data-transition="slide" data-icon="arrow-r">Examples:Scanner</a></li>
+  <li> <a href="#fiveexampleone"  data-transition="slide" data-icon="arrow-r">Example One: User Input</a></li>
    </ul>
   </div>
   </div>
 </div> 
 
+
 <div data-role="page" id="fiveexampleone">
+
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfiveone">User Input</a></li>
+		<li><a href="#fiveexampleone">Example One: Scanner</a></li>
+		<li><a href="sectionfivequiz.html" rel="external">Multiple Choice Quiz: Scanner</a></li>
+	
+	</ul>
+  </div>
   <div data-role="header">
 
     <h1>Example One</h1>
@@ -1973,9 +2399,22 @@ After you hit the enter key, java will take whatever was typed and store it in t
    </ul>
   </div>
   </div>
-  </div> 
+  </div>
+  
   <!-- Tutorial Start-->
 <div data-role="page" id="sectionsixone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsixone">What is an Array?</a></li>
+	<li><a href="#sectionsixtwo">Array Index</a></li>
+	<li><a href="#sectionsixthree">More on Arrays</a></li>
+	<li><a href="#sectionsixfour">Random Numbers</a></li>
+	<li><a href="#sectionsixfive">Arrays and Loops</a></li>
+		<li><a href="#sixexampleone">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
   <div data-role="header">
   
     <h1>Arrays</h1>
@@ -2029,6 +2468,18 @@ myFirstArray[ i ] = 1 ;
 
 </div> 
 <div data-role="page" id="sectionsixtwo">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsixone">What is an Array?</a></li>
+	<li><a href="#sectionsixtwo">Array Index</a></li>
+	<li><a href="#sectionsixthree">More on Arrays</a></li>
+	<li><a href="#sectionsixfour">Random Numbers</a></li>
+	<li><a href="#sectionsixfive">Arrays and Loops</a></li>
+		<li><a href="#sixexampleone">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
   <div data-role="header">
   
     <h1>Array Indexing</h1>
@@ -2099,6 +2550,18 @@ Can get the value stored in the array easily:<br>
   </div>
   </div> 
 <div data-role="page" id="sectionsixthree">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsixone">What is an Array?</a></li>
+	<li><a href="#sectionsixtwo">Array Index</a></li>
+	<li><a href="#sectionsixthree">More on Arrays</a></li>
+	<li><a href="#sectionsixfour">Random Numbers</a></li>
+	<li><a href="#sectionsixfive">Arrays and Loops</a></li>
+		<li><a href="#sixexampleone">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
   <div data-role="header">
   
     <h1>Arrays - More Detail</h1>
@@ -2132,6 +2595,18 @@ We can also randomly generate numbers to put in to our array</p>
   </div>
 </div> 
 <div data-role="page" id="sectionsixfour">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsixone">What is an Array?</a></li>
+	<li><a href="#sectionsixtwo">Array Index</a></li>
+	<li><a href="#sectionsixthree">More on Arrays</a></li>
+	<li><a href="#sectionsixfour">Random Numbers</a></li>
+	<li><a href="#sectionsixfive">Arrays and Loops</a></li>
+		<li><a href="#sixexampleone">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
   <div data-role="header">
   
     <h1>Random Numbers</h1>
@@ -2170,6 +2645,18 @@ array[i] = randomInt;
   </div>
 </div> 
 <div data-role="page" id="sectionsixfive">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsixone">What is an Array?</a></li>
+	<li><a href="#sectionsixtwo">Array Index</a></li>
+	<li><a href="#sectionsixthree">More on Arrays</a></li>
+	<li><a href="#sectionsixfour">Random Numbers</a></li>
+	<li><a href="#sectionsixfive">Arrays and Loops</a></li>
+		<li><a href="#sixexampleone">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
   <div data-role="header">
       <h1>Arrays and Loops</h1>
 	<div data-role="navbar" data-iconpos="top">
@@ -2203,6 +2690,18 @@ generate an out of bounds error</p>
 </div> 
 
 <div data-role="page" id="sixexampleone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsixone">What is an Array?</a></li>
+	<li><a href="#sectionsixtwo">Array Index</a></li>
+	<li><a href="#sectionsixthree">More on Arrays</a></li>
+	<li><a href="#sectionsixfour">Random Numbers</a></li>
+	<li><a href="#sectionsixfive">Arrays and Loops</a></li>
+		<li><a href="#sixexampleone">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
   <div data-role="header">
   
     <h1>Example One: Arrays</h1>
@@ -2248,13 +2747,19 @@ generate an out of bounds error</p>
  <div data-role="navbar">
  <ul>
   <li><a href="#sectionsixfive" data-transition="slide" data-icon="arrow-l">Back</a></li>
-  <li> <a href="#sectionsevenone" data-transition="slide" data-icon="arrow-r">Section Seven: Methods</a></li>
+  <li> <a href="sectionsixquiz.html" rel="external" data-transition="slide" data-icon="arrow-r">MCQ: Arrays</a></li>
    </ul>
   </div>
   </div>
  </div> 
 <!-- Tutorial Start-->
 <div data-role="page" id="sectionsevenone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionsevenone">Introduction to Methods</a></li>
+			</ul>
+  </div>
   <div data-role="header">
  
     <h1>Methods</h1>
@@ -2287,7 +2792,7 @@ Very often a method will return a value of some type<br>
  <code>s1.charAt(5);</code></p
  
  <h4>Method Signature</h4>
- <p>The method signature tells us a lot – the 
+ <p>The method signature tells us a lot about the 
 name of the method, the input parameters 
 and the return type<br>
 For Example:<br>
@@ -2322,13 +2827,127 @@ We do:<br>
 <div data-role="footer"data-position="fixed">
 <div data-role="navbar">
       <ul>
-        <li><a href="sixexampleone"data-transition="slide" data-icon="arrow-l">Back </a></li>
-        <li> <a href="multiplechoiceone" data-transition="slide" data-icon="arrow-r">Go to Quiz Section</a></li>
+        <li><a href="#sixexampleone"data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="quizselfone.html#quizmenu" rel="external" data-transition="slide" data-icon="arrow-r">Go to Quiz Section</a></li>
       </ul>
     </div>
   </div>
 </div>
 
+<div data-role="page" id="outputone">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Quiz Listings</h2>
+   <ul data-role="listview">
+   <li><a href="#outputone">Quiz One</a></li>
+	<li><a href="#outputtwo">Quiz Two</a></li>
+	 <li><a href="#outputthree">Quiz Three</a></li>
+	<li><a href="#outputfour">Quiz Four</a></li>
+	
+	</ul>
+  </div>
+  <div data-role="header">
+    <h1>What is the output of this code?</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+              </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p align="center" >Below you'll find a snippet of code, choose from the options underneath what you think the output should be
+ </p>
+	<code><pre>
+
+		class increment {
+			public static void main(String args[]) 
+				{        
+					int g = 3;
+					System.out.print(++g * 8);
+				} 
+			}
+  </pre></code>
+  
+ <form name="testform">
+<input type="radio" name="radio1" value="a" data-mini="true" id="q1a"><label for="q1a">25</label>
+<input type="radio" name="radio2" value="b" data-mini="true" id="q1b"><label for="q1b">33</label>
+<input type="radio" name="radio3" value="c" data-mini="true" id="q1c"><label for="q1c">24</label>
+<input type="radio" name="radio4" value="d" data-mini="true" id="q1d"><label for="q1d">32</label>
+ <input type="button" name="button" Value="Check Answer" 
+        onClick="testButton1(form)"> <input type="reset"  value="Clear">
+
+</form>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#pageone"data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#outputtwo" data-transition="slide" data-icon="arrow-r">Next Question</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div data-role="page" id="outputtwo">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Quiz Listings</h2>
+   <ul data-role="listview">
+   <li><a href="#outputone">Quiz One</a></li>
+	<li><a href="#outputtwo">Quiz Two</a></li>
+	 <li><a href="#outputthree">Quiz Three</a></li>
+	<li><a href="#outputfour">Quiz Four</a></li>
+	
+	</ul>
+  </div>
+  <div data-role="header">
+    <h1>What is the output of this code?</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
+		<li><a href="#pageone" data-icon="home">Home</a></li>
+              </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <p align="center" >Below you'll find a snippet of code, choose from the options underneath what you think the output should be
+ </p>
+	<code><pre>
+
+		class mainclass {
+		public static void main(String args[]) 
+			{
+			boolean var1 = true;
+			boolean var2 = false;
+			if (var1)
+			System.out.println(var1);
+			else
+			System.out.println(var2);
+       } 
+    }
+  </pre></code>
+  
+  <form name="testform">
+
+<input type="radio" name="radio5" value="a" data-mini="true" id="q1a"><label for="q1a">true</label>
+<input type="radio" name="radio6" value="b" data-mini="true" id="q1b"><label for="q1b">false</label>
+<input type="radio" name="radio7" value="c" data-mini="true" id="q1c"><label for="q1c">1</label>
+<input type="radio" name="radio8" value="d" data-mini="true" id="q1d"><label for="q1d">0</label>
+ <input type="button" name="button" Value="Check Answer" 
+        onClick="testButton2(form)"> <input type="reset"  value="Clear">
+
+</form>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#outputone"data-transition="slide" data-icon="arrow-l">Back </a></li>
+        <li> <a href="#outputthree" data-transition="slide" data-icon="arrow-r">Next Question</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
 
  
       <script type="text/javascript" src="phonegap.js"></script>
