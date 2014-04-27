@@ -114,12 +114,12 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
 
       GetFeedback = function(a){
                       if(a==CorrectAnswer){
-                              context.drawImage(quizbg, 0,400,75,70,280,110+(90*(a-1)),75,70);
+                              context.drawImage(quizbg, 0,400,75,70,250,110+(90*(a-1)),75,70);
                               rightanswers++;
                                      
                         }
                         else{
-                              context.drawImage(quizbg, 75,400,75,70,280,110+(90*(a-1)),75,70);
+                              context.drawImage(quizbg, 75,400,75,70,250,110+(90*(a-1)),75,70);
                               wronganswers++;
                         }
                         lock=true;
@@ -194,7 +194,7 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
   </div>
   <div data-role="main" class="ui-content">
    <div id="ccontainer">
-        <canvas id="myCanvas" width="550" height="400"> </canvas>
+        <canvas id="myCanvas" width="350" height="400"> </canvas>
     </div>
   </div>
   
