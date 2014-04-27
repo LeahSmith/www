@@ -16,9 +16,9 @@
                       background:#d3d3d3;
                         }
             #ccontainer{
-                        width:550px;
-                        margin: 0 auto;
-                        margin-top:50px;
+                        width:400px;
+                        margin:40px 0px 15px 0px;
+                        
                          }
             #myCanvas {
                       background:#d3d3d3;
@@ -85,10 +85,10 @@ if(CorrectAnswer==1){Option1=Options[qnumber][0];Option2=Options[qnumber][1];Opt
 if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Option3=Options[qnumber][0];}
 
                       context.textBaseline = "middle";
-                      context.font = "18pt Arial ";
-					  context.fillStyle = '#A8A8A8';
+                      context.font = "16pt Arial ";
+					  context.fillStyle = '#5C5C5C';
                       context.fillText(Question,20,textpos1);
-                      context.font = "16pt Arial";
+                      context.font = "14pt Arial";
                       context.fillText(Option1,20,textpos2);
                       context.fillText(Option2,20,textpos3);
                       context.fillText(Option3,20,textpos4);
@@ -140,9 +140,9 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
       EndQuiz=function(){
                       canvas.removeEventListener('click',ProcessClick,false);
                       context.drawImage(quizbg, 0,0,550,90,0,0,550,400);
-                      context.font = "20pt Calibri,Arial";
+                      context.font = "16pt Arial";
                       context.fillText("You have finished the quiz!",20,100);
-                      context.font = "16pt Calibri,Arial";
+                      context.font = "16pt Arial";
                       context.fillText("Correct answers: "+String(rightanswers),20,200);
                       context.fillText("Wrong answers: "+String(wronganswers),20,240);
                       }
