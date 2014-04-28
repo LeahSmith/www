@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         }
         
         $(this).append('<div class="loading">Processing...</div>');
-        
+        var data = $(this).serialize();
         $.ajax({
             type: 'post',
             url: 'http://leahsmuchanan.yzi.me/process.php',
