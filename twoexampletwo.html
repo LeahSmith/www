@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/app.min.css" />
+		<link rel="stylesheet" href="themes/style.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="javascript/script.js"></script>
+</head>
+<body>
+<div data-role="page" id="twoexampletwo">
+  <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="index.html#sectiontwoone" rel="external">Declaring Variables</a></li>
+	<li><a href="index.html#sectiontwotwo" rel="external">Data Types</a></li>
+	<li><a href="index.html#sectiontwothree" rel="external">Operators in Java</a></li>
+	<li><a href="index.html#sectiontwofour" rel="external">Operator Precedence</a></li>
+	<li><a href="index.html#sectiontwofive"rel="external">Decision making in Java</a></li>
+	<li><a href="twoexampleone.html" rel="external">Example One: Variables</a></li>
+	<li><a href="twoexampletwo.html" rel="external">Example Two: Variables</a></li>
+	<li><a href="sectiontwoquiz.html" rel="external">Multiple Choice Quiz: Variables</a></li>
+	
+	</ul>
+  </div>
+  <div data-role="header">
+
+    <h1>Example Two: Variables</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
+		<li><a href="index.html#pageone"rel="external"  data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h3>Using Operators on Java Variables </h3>
+		<p>Click Submit and wait to see the expected output.</p>
+        <form id="code" action="#" method="post">
+               			<div><label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;public class Operators{&#13;&#10;public static void main(String args[]){&#13;&#10;&#13;&#10;// Declare variables&#13;&#10;int num1 = 5;&#13;&#10;int num2 = 13;&#13;&#10;&#13;&#10;//Perform addition&#13;&#10;num1+=num2;//This is the same as saying num1=num1+num2;&#13;&#10;System.out.println("num1 + num2 =" + num1);&#13;&#10;//Perform Subtraction;&#13;&#10;num1-=num2; //This is same as saying num1=num1-num2;&#13;&#10;System.out.println("num1 -= num2 = " + num1);&#13;&#10;//Perform Multiplication;&#13;&#10;num1 *=num2// This is the same as saying num1=num1*num2&#13;&#10;System.out.println("num1 *= num2 =" + num1);&#13;&#10;// Perform Division;&#13;&#10;num1/=num2; //This is the same as num1=num1/num2;&#13;&#10;System.out.println("num1 /= num2 = " + num1);&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea  cols="40" rows="3" name="input" id="input"></textarea>
+				
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		
+  </div>
+  </div>
+<div data-role="footer"data-position="fixed">
+<div data-role="navbar">
+      <ul>
+        <li><a href="#twoexampleone" data-transition="slide" data-icon="arrow-l">Example One </a></li>
+        <li> <a href="sectiontwoquiz.html" rel="external"  data-transition="slide" data-icon="arrow-r">Section Three: Loops</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+  </div>
+  <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="javascript/index.js"></script>
+		</body>
+		</html>

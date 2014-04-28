@@ -1,0 +1,94 @@
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/app.min.css" />
+		<link rel="stylesheet" href="themes/style.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="javascript/script.js"></script>
+</head>
+<body>
+
+
+
+
+
+<div data-role="page" id="fourexampletwo">
+ <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="index.html#sectionfourone"rel="external">Java Strings</a></li>
+	<li><a href="index.html#sectionfourtwo"rel="external">String + Concatentation</a></li>
+	<li><a href="index.html#sectionfourthree"rel="external">String Length()</a></li>
+	<li><a href="index.html#sectionfourfour"rel="external">String Index Numbers</a></li>
+	<li><a href="index.html#sectionfourfive"rel="external">SubString()</a></li>
+	<li><a href="index.html#sectionfoursix"rel="external">Other Methods</a></li>
+	<li><a href="fourexampleone"rel="external">Example One: Strings</a></li>
+	<li><a href="fourexampletwo"rel="external">Example Two: Strings</a></li>
+	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
+	</ul>
+  </div>
+  <div data-role="header">
+  
+  <h1>Example: Strings</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
+		<li><a href="index.html#pageone"rel="external"data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h1>Try it here</h1>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;System.out.println("This is awesome");&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea  cols="40" rows="3" name="input" id="input"></textarea>
+				
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+</div>
+  
+    
+  
+  <div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="fourexampleone.html"rel="external"  data-transition="slide" data-icon="arrow-l">Back</a></li>
+  <li> <a href="sectionfourquiz.html" rel="external"  data-transition="slide" data-icon="arrow-r">MCQ's: Strings</a></li>
+   </ul>
+  </div>
+  </div>
+   </div>
+   </div>
+   <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="javascript/index.js"></script>
+    </body>
+	</html>

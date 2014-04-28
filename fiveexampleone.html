@@ -1,0 +1,85 @@
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/app.min.css" />
+		<link rel="stylesheet" href="themes/style.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="javascript/script.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="fiveexampleone">
+
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="#sectionfiveone">User Input</a></li>
+		<li><a href="fiveexampleone.html"rel="external">Example One: Scanner</a></li>
+		<li><a href="sectionfivequiz.html" rel="external">Multiple Choice Quiz: Scanner</a></li>
+	
+	</ul>
+  </div>
+  <div data-role="header">
+
+    <h1>Example One</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
+		<li><a href="index.html#pageone" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div id="wrapper">
+        <h4>Example of a full Scanner class</h4>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;import java.util.Scanner;&#13;&#10;class Userinput{&#13;&#10;oublic static void main(String[] args){&#13;&#10;String number, inter, op, remaining; // Create Strings&#13;&#10; String number, inter, op, remaining; // Create Strings&#13;&#10;Scanner scan = new Scanner( System.in ); // Create a scanner&#13;&#10;System.out.print( "Enter an Irish mobile phone number > " &#13;&#10;number = scan.nextLine(); // Read in number&#13;&#10;while(number.length()!= 12) // Check if number is not of length 12&#13;&#10;{&#13;&#10;System.out.print( "Enter an Irish mobile phone number > " );&#13;&#10;number = scan.nextLine();&#13;&#10;System.out.println("You entered " + number);&#13;&#10;enter = number.substring(0,3);&#13;&#10;System.out.println("The international code is " + inter);&#13;&#10;op = number.substring(3,5);&#13;&#10;System.out.println("The operator code is " + op);&#13;&#10;remaining = number.substring(5);&#13;&#10;System.out.println("The number is " + remaining );&#13;&#10;System.out.println("The complete number is (" + inter + ") " + op + " " + remaining);&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+  
+			</div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea id="codeTextarea" cols="40" rows="3" name="input" id="input"></textarea>
+				<script type="text/javascript">createTextAreaWithLines('codeTextarea');</script>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="sectionfourtwo.html" rel="external"  data-transition="slide" data-icon="arrow-l">Back</a></li>
+  <li> <a href="sectionfivequiz.html" rel="external"   data-transition="slide" data-icon="arrow-r">MCQ's: Scanner</a></li>
+   </ul>
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="javascript/index.js"></script>
+    </body>
+	</html>

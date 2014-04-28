@@ -1,0 +1,83 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="themes/app.min.css" />
+		<link rel="stylesheet" href="themes/style.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="javascript/script.js"></script>
+</head>
+<body>
+
+
+<div data-role="page" id="sixexampleone">
+<div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
+    <h2>Tutorial Content</h2>
+   <ul data-role="listview">
+   <li><a href="index.html#sectionsixone"rel="external">What is an Array?</a></li>
+	<li><a href="index.html#sectionsixtwo"rel="external">Array Index</a></li>
+	<li><a href="index.html#sectionsixthree" rel="external">More on Arrays</a></li>
+	<li><a href="index.html#sectionsixfour" rel="external">Random Numbers</a></li>
+	<li><a href="index.html#sectionsixfive" rel="external">Arrays and Loops</a></li>
+		<li><a href="sixexampleone.html"rel="external">Example One: Arrays</a></li>
+		<li><a href="sectionsixquiz.html" rel="external">Multiple Choice Quiz: Arrays</a></li>
+		</ul>
+  </div>
+  <div data-role="header">
+  
+    <h1>Example One: Arrays</h1>
+	<div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
+		<li><a href="index.html#pageone" rel="external" data-icon="home">Home</a></li>
+        <li><a href="#" data-icon="search">Search </a></li>
+      </ul>
+    </div>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="wrapper">
+        <h3>Asking a user for array entries</h3>
+        <form id="code" action="#" method="post">
+               
+			<div>
+                <label for="source">Source Code:</label>
+                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;import java.util.Scanner;&#13;&#10;class arrays{&#13;&#10;public static void main(String args[]){&#13;&#10;// This example will ask the user for the array elements&#13;&#10;&#13;&#10;Scanner scan = new Scanner(System.in);int size = 0;&#13;&#10;System.out.println("What size array would you like?");&#13;&#10;size = scan.nextInt();&#13;&#10;&#13;&#10;int arr[]=new int[size];&#13;&#10;&#13;&#10;for(int i=0;i<ar.length;i++)&#13;&#10;{&#13;&#10;System.out.println("Please enter a value for element " + i + " ");&#13;&#10;ar[i]=scan.nextInt();&#13;&#10;}&#13;&#10;System.out.println("The array elements are: ");&#13;&#10;for(int j=0;j<ar.length;j++)&#13;&#10;{&#13;&#10;System.out.println(ar[j]+" ");&#13;&#10;}&#13;&#10;}&#13;&#10;}</textarea>
+            </div>
+            
+            <div>
+                <label for="input">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+                <textarea  cols="40" rows="3" name="input" id="input"></textarea>
+				
+            </div>
+
+            <div>
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        
+        <div id="response">
+            <div class="meta"></div>
+            <div class="output"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </div>
+   
+  </div>
+<div data-role="footer"data-position="fixed">
+ <div data-role="navbar">
+ <ul>
+  <li><a href="index.html#sectionsixfive" rel="external" data-transition="slide" data-icon="arrow-l">Back</a></li>
+  <li> <a href="sectionsixquiz.html" rel="external" data-transition="slide" data-icon="arrow-r">MCQ: Arrays</a></li>
+   </ul>
+  </div>
+  </div>
+ </div> 
+ <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="javascript/index.js"></script>
+    </body>
