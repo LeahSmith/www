@@ -1,18 +1,18 @@
 
 
-
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
     $('#code').submit( function(){
+		
         var data = $(this).serialize();
         var source = $('textarea#source').val();
         
-               $(this).append('<div class="loading">Processing...</div>');
+         $(this).append('<div class="loading">Processing...</div>');
         
        $.ajax({
             type: 'POST',
-            url: 'http://javagal.bugs3.com/process.php',
+            url: 'http://leahsmuchanan.bugs3.com/process.php',
             dataType: 'json',
-            data: data + '&process=1',
+            data:data + '&process=1',  
             cache: false,
 			timeout: 50000,
             success: function(response){
@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
                 }
                 //alert( response.msg );
             }
+			
         });
         
         return false;
