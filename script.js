@@ -1,5 +1,9 @@
-$.support.cors = true;
-$.mobile.allowCrossDomainPages = true;
+$( document ).bind( "mobileinit", function() {
+        $.support.cors                 = true;
+        $.mobile.allowCrossDomainPages = true;
+        $.mobile.pushStateEnabled      = false;
+      });
+
 
 jQuery(document).ready(function($) {
     $('#code').submit( function(){
@@ -19,6 +23,7 @@ jQuery(document).ready(function($) {
             dataType: 'json',
             data: data + '&process=1',
             cache: false,
+			timeout: 10000,
             success: function(response){
                 $('.loading').remove();
                 $('.cmpinfo').remove();
