@@ -10,20 +10,15 @@ jQuery(document).ready(function($) {
         var data = $(this).serialize();
         var source = $('textarea#source').val();
         
-        if( source == '' ) {
-            alert( 'No source code provided');
-            return false;
-        }
+               $(this).append('<div class="loading">Processing...</div>');
         
-        $(this).append('<div class="loading">Processing...</div>');
-        
-        $.ajax({
+       $.ajax({
             type: 'post',
             url: 'http://javagal.bugs3.com/process.php',
             dataType: 'json',
             data: data + '&process=1',
             cache: false,
-			timeout: 10000,
+			timeout: 50000,
             success: function(response){
                 $('.loading').remove();
                 $('.cmpinfo').remove();
