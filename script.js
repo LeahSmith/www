@@ -1,3 +1,6 @@
+$.support.cors = true;
+$.mobile.allowCrossDomainPages = true;
+
 jQuery(document).ready(function($) {
     $('#code').submit( function(){
         var data = $(this).serialize();
