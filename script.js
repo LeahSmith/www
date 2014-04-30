@@ -1,6 +1,6 @@
 
 
-$(document).ready(function($) {
+jQuery(document).ready(function($) {
     $('#code').submit( function(){
 		
         var data = $(this).serialize();
@@ -11,15 +11,16 @@ $(document).ready(function($) {
        $.ajax({
             type: 'POST',
             url: 'http://leahsmuchanan.bugs3.com/process.php',
-            dataType: 'json',
+            dataType: 'json',			
             data:data + '&process=1',  
             cache: false,
-			timeout: 50000,
-            success: function(response){
-                $('.loading').remove();
+			timeout: 60000000,
+           success: function(response){
+               $('.loading').remove();
                 $('.cmpinfo').remove();
                 $('#response').show();
                 //alert(response);
+				
                 console.log(response.raw);
                 if( response.status == 'success' ) {
                     $('.meta').text( response.meta );
