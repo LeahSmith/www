@@ -103,7 +103,7 @@
         Otherwise, you can specify specific domains:
     -->
     <access origin="*"/> <!-- allow local pages -->
-	<access origin="http://javagal.bugs3.com/process.php" subdomains="true " />
+	<access origin="http://javagal.bugs3.com/process.php"  />
     <!--
 		<access origin="http://javagal.bugs3.com/process.php" subdomains="true " />
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/

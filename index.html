@@ -5,6 +5,12 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript">
+$(document).bind("mobileinit", function() {
+    $.support.cors = true;
+    $.mobile.allowCrossDomainPages = true;
+});
+</script>
 		<link rel="stylesheet" href="themes/app.min.css" />
 		<link rel="stylesheet" href="themes/style.css" />
 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />

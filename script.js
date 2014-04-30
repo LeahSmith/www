@@ -1,8 +1,4 @@
-$( document ).bind( "mobileinit", function() {
-        $.support.cors                 = true;
-        $.mobile.allowCrossDomainPages = true;
-        $.mobile.pushStateEnabled      = false;
-      });
+
 
 
 jQuery(document).ready(function($) {
@@ -13,7 +9,7 @@ jQuery(document).ready(function($) {
                $(this).append('<div class="loading">Processing...</div>');
         
        $.ajax({
-            type: 'post',
+            type: 'POST',
             url: 'http://javagal.bugs3.com/process.php',
             dataType: 'json',
             data: data + '&process=1',
