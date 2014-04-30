@@ -9,10 +9,10 @@ jQuery(document).ready(function($) {
         }
         
         $(this).append('<div class="loading">Processing...</div>');
-        var data = $(this).serialize();
+        
         $.ajax({
             type: 'post',
-            url: 'http://leahsmuchanan.yzi.me/process.php',
+            url: 'http://javagal.bugs3.com/process.php',
             dataType: 'json',
             data: data + '&process=1',
             cache: false,
