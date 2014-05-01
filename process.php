@@ -3,8 +3,9 @@
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET,PUT,POST,DELETE'); 
-
-error_reporting(1);
+header('Access-Control-Allow-Headers: *');
+header('Access-Control-Allow-Headers: Content-Type');
+error_reporting(0);
 
 $user = 'LeahSmuchanan';
 $pass = 'hoover123';
