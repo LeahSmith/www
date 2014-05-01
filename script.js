@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
        $.ajax({
             type: 'POST',
             url: 'http://leahsmuchanan.bugs3.com/process.php',
+			contentType:"application/json",
             dataType: "json",
 			data:data + '&process=1',  
 			cache: false,
