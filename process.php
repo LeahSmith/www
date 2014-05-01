@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET,PUT,POST,DELETE'); 
 
-error_reporting(0);
+error_reporting(1);
 
 $user = 'LeahSmuchanan';
 $pass = 'hoover123';
