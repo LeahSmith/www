@@ -25,23 +25,7 @@ $(document).bind("mobileinit", function() {
 
 </script>
 
-    <script type="text/javascript" charset="utf-8">
-function onLoad() {
-        document.addEventListener("online", onOnline, false);
-        document.addEventListener("deviceready", onDeviceReady, false);
-		
-    }
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-	
-    }
-
-    // Handle the online event
-    //
-    
-    </script>
+  
 
 <script>
 var total=1
@@ -64,7 +48,7 @@ compliments[3]="Good work!"
 
 question[1]="What is the output of the follwing Code?\r\nclass increment{\r\npublic static void main(String args[]){\r\nint g = 3;\r\nSystem.out.print(++g * 8);\r\n}\r\n}"
 
-solution[1]="32
+solution[1]="32"
 </script>
 <script>
 
@@ -107,15 +91,10 @@ jQuery(document).ready(function($) {
                $('.loading').remove();
                 $('.cmpinfo').remove();
                 
-               alert(response.output);
-				
-                
+               $('.output').html('<pre>' + response + '</pre>');
                     
-                } else {
-                    $('.output').html('<pre>' + response + '</pre>');
-                    alert( response.output );
                 }
-                alert( response.msg );
+                
             }
 			
         });
@@ -173,7 +152,7 @@ color:#9ab9cf;
 </head>
 
 <body>
- <body onload="onLoad()">
+ 
        
 <div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-collapsed-icon="false" data-inset="false">
 				<div data-role="collapsible">
@@ -2450,7 +2429,7 @@ var tempmn=document.instantquiz.thequestion
 function generatequestions(){
 document.instantquiz.theresponse.selectedIndex=0
 
-if (whichone>=total+1)
+if (whichone>=1)
 tempmn.value="End of quiz"
 else{
 tempmn.value=whichone+") "+question[whichone]+"\n\n"+""
@@ -2486,7 +2465,7 @@ generatequestions()
   
 
  
-      <script type="text/javascript" src="phonegap.js"></script>
+     
         
     </body>
 </html>
