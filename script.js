@@ -14,7 +14,9 @@ jQuery(document).ready(function($) {
             url: 'http://leahsmuchanan.bugs3.com/process.php',
             dataType: "json",
 			data:data + '&process=1',  
+			cache: false,
             timeout: 60000000,
+			
            success: function(response){
 		   
                $('.loading').remove();
@@ -34,7 +36,7 @@ jQuery(document).ready(function($) {
                     }
                     
                 } else {
-                    //$('.output').html('<pre>' + response + '</pre>');
+                   // $('.output').html('<pre>' + response + '</pre>');
                     alert( response.output );
                 }
                 //alert( response.msg );
