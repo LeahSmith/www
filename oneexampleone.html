@@ -19,6 +19,40 @@ $(document).on("mobileinit", function(){
 
 });
 </script>
+<script>
+
+ 
+
+jQuery(document).ready(function($) {
+    $('#code').submit( function(){
+		
+        var data = $(this).serialize();
+        var source = $('textarea#source').val();
+        
+         $(this).append('<div class="loading">Processing...</div>');
+        
+       $.ajax({
+            type: 'POST',
+            url: 'http://leahsmuchanan.bugs3.com/process.php',
+            dataType: "json",
+			data:data + '&process=1',  
+            timeout: 60000000,
+           success: function(response){
+		                  $('.loading').remove();
+                $('.cmpinfo').remove();
+                
+              	
+                
+                    
+                } else {
+                    //$('.output').html('<pre>' + response + '</pre>');
+                    alert( response.output );
+                }
+                alert( response.msg );
+            }
+			
+        });
+		</script>
 </head>
 <body>
 <div data-role="page" id="oneexampleone">
@@ -87,7 +121,7 @@ $(document).on("mobileinit", function(){
   </div>
   
 </div> 
-<script src="script.js"></script>
+
         
 </body>
 </html>

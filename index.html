@@ -5,16 +5,17 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		
 		<link rel="stylesheet" href="themes/app.min.css" />
 		<link rel="stylesheet" href="themes/style.css" />
 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-<script src="script.js"></script>
-<script src="phonegap.js"></script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src="script.js"></script>
+	<script src="phonegap.js"></script>
 <script type="text/javascript">
 $(document).bind("mobileinit", function() {
     $.support.cors = true;
@@ -28,28 +29,22 @@ $(document).bind("mobileinit", function() {
 function onLoad() {
         document.addEventListener("online", onOnline, false);
         document.addEventListener("deviceready", onDeviceReady, false);
+		
     }
 
     // device APIs are available
     //
     function onDeviceReady() {
+	
     }
 
     // Handle the online event
     //
-    function onOnline() {
-    }
+    
     </script>
 
-
-function testButton1 (form){
-        alert (form.radio4.checked);
-}
-function testButton2 (form){
-        return (form.radio5.checked);
-}
-
-var total=2
+<script>
+var total=1
 var question=new Array()
 for (i=1;i<=total+1;i++){
 temp="choice"+i+"=new Array()"
@@ -69,11 +64,69 @@ compliments[3]="Good work!"
 
 question[1]="What is the output of the follwing Code?\r\nclass increment{\r\npublic static void main(String args[]){\r\nint g = 3;\r\nSystem.out.print(++g * 8);\r\n}\r\n}"
 
-solution[1]="32"
+solution[1]="32
+</script>
+<script>
+
+var connectionStatus = false;
+
+$(document).on('pagebeforeshow', '#pageone', function () {
+    setInterval(function () {
+        connectionStatus = navigator.onLine ? 'online' : 'offline';
+    }, 100);
+    $(document).on('click', '#check-connection', function () {
+        alert(connectionStatus);
+    });
+});
 
 
 
 </script>
+<script>
+
+ 
+
+jQuery(document).ready(function($) {
+    $('#code').submit( function(){
+		
+        var data = $(this).serialize();
+        var source = $('textarea#source').val();
+        
+         $(this).append('<div class="loading">Processing...</div>');
+        
+       $.ajax({
+            type: 'POST',
+            url: 'http://leahsmuchanan.bugs3.com/process.php',
+            dataType: "json",
+			data:data + '&process=1',  
+            timeout: 60000000,
+           success: function(response){
+		   
+               $('.loading').remove();
+                $('.cmpinfo').remove();
+                
+               alert(response.output);
+				
+                
+                    
+                } else {
+                    $('.output').html('<pre>' + response + '</pre>');
+                    alert( response.output );
+                }
+                alert( response.msg );
+            }
+			
+        });
+        
+        return false;
+    });
+});
+
+   
+
+  			
+</script>
+
 <style>
 
 th
@@ -119,6 +172,7 @@ color:#9ab9cf;
 
 <body>
  <body onload="onLoad()">
+       
 <div data-role="collapsible-set" data-theme="b" data-content-theme="b" data-collapsed-icon="false" data-inset="false">
 				<div data-role="collapsible">
 					<h2 ><div class="mheader">Tutorials</div></h2>
@@ -220,7 +274,7 @@ color:#9ab9cf;
 Should you not see the result of the compiled/executed code, you can re-try to compile and execute the code when using WiFi/Mobile Data.</p>
  <div id="wrapper">
         <br>
-        <form id="code" action="#" method="post">
+        <form id="code" action="#" method="POAT">
                
 			<div>
                 <label for="source"><strong>Source Code:</strong></label>
@@ -234,7 +288,7 @@ Should you not see the result of the compiled/executed code, you can re-try to c
             </div>
 
             <div>
-                <input type="submit" name="submit" value="Submit" />
+                <input type="submit" id="submit" value="Submit" />
             </div>
         </form>
         
@@ -249,7 +303,9 @@ Should you not see the result of the compiled/executed code, you can re-try to c
 					</div>
 					<div data-role="collapsible">
 					<h2><div class="mheader">Options</div></h2>
-					<p class="contents">Options here</p>
+					<p class="contents"><div data-role="content"> <a data-role="button" id="check-connection">Check internet connection</a>
+
+</div></p>
 					</div>
 					
 					<div data-role="collapsible">
@@ -2330,7 +2386,7 @@ We do:<br>
     <h2>Quiz Listings</h2>
    <ul data-role="listview">
    <li><a href="#outputone">Quiz One</a></li>
-	<li><a href="#outputtwo">Quiz Two</a></li>
+	<li><a href="outputquiztwo.html" rel="external">Quiz Two</a></li>
 	 <li><a href="#outputthree">Quiz Three</a></li>
 	<li><a href="#outputfour">Quiz Four</a></li>
 	

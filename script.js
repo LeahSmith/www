@@ -13,16 +13,14 @@ jQuery(document).ready(function($) {
             type: 'POST',
             url: 'http://leahsmuchanan.bugs3.com/process.php',
             dataType: "json",
-			
-            data:data + '&process=1',  
-            
-			timeout: 60000000,
+			data:data + '&process=1',  
+            timeout: 60000000,
            success: function(response){
-		   alert("HELLO");
+		   
                $('.loading').remove();
                 $('.cmpinfo').remove();
                 $('#response').show();
-                //alert(response);
+               alert(response);
 				
                 console.log(response.raw);
                 if( response.status == 'success' ) {
