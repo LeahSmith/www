@@ -1,4 +1,5 @@
 
+ 
 
 jQuery(document).ready(function($) {
     $('#code').submit( function(){
@@ -11,11 +12,13 @@ jQuery(document).ready(function($) {
        $.ajax({
             type: 'POST',
             url: 'http://leahsmuchanan.bugs3.com/process.php',
-            dataType: 'json',			
+            dataType: "json",
+			
             data:data + '&process=1',  
-            cache: false,
+            
 			timeout: 60000000,
            success: function(response){
+		   alert("HELLO");
                $('.loading').remove();
                 $('.cmpinfo').remove();
                 $('#response').show();

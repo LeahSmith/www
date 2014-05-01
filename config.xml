@@ -104,7 +104,7 @@
     <feature name="http://api.phonegap.com/1.0/notification"/>
     -->
 
-    <access origin="*" subdomains="true"/>
+    <access origin="*"  subdomains="true"/>
 	
-<access origin="http://leahsmuchanan.bugs3.com" subdomains="true"/>
+
 </widget>
