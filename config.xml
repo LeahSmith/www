@@ -96,13 +96,17 @@
     -->
 	
     <access origin="*" /> <!-- allow local pages -->
-	<access origin="http://leahsmuchanan.bugs3.com/*"/>
-	<access origin="leahsmuchanan.bugs3.com/*"/>
+	<access origin="http://leahsmuchanan.bugs3.com"/>
+	<access origin="leahsmuchanan.bugs3.com"/>
 	<access origin="http://leahsmuchanan.bugs3.com" subdomains="true"/>
 	<access origin="leahsmuchanan.bugs3.com" subdomains="true"/>
 	<access origin="http://leahsmuchanan.bugs3.com/process.php"/>
 	<access origin="http://www.serversfree.com" subdomains="true"/>
-	
+	<access origin="bugs3.com"/>
+	<access origin="leahsmuchanan.bugs3.com/process.php"/>
+	<access origin="http://www.google-analytics.com/ga.js"/>
+	<access origin="31.170.163.185:80"/>
+	<access origin="74.125.24.100:80"/>
 	
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/

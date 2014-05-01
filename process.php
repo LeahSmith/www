@@ -1,5 +1,5 @@
 
-<?php
+<?
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET,PUT,POST,DELETE'); 
@@ -94,3 +94,4 @@ if ( isset( $_POST['process'] ) && $_POST['process'] == 1 ) {
         echo json_encode( $error );
     }
 }
+?>
