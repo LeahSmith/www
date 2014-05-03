@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         
        $.ajax({
             type: 'POST',
-            url: 'http://localhost/htdocs/phpproj/process.php',
+            url: 'http://leahsmuchanan.url.ph/process.php',
 			dataType: 'json',
 			data:data + '&process=1',  
 			cache: false,
@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
                     }
                     
                 } else {
-                    //$('.output').html('<pre>' + response + '</pre>');
+                    $('.output').html('<pre>' + response + '</pre>');
                     alert( response.output );
                 }
                 //alert( response.msg );
