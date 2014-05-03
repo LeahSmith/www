@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         
        $.ajax({
             type: 'POST',
-            url: 'http://leahsmuchanan.byethost8.com/process.php',
+            url: 'http://leahsmuchanan.eu.pn/process.php',
 			dataType: 'json',
 			data:data + '&process=1',  
 			cache: false,
