@@ -13,6 +13,10 @@
 /* Globals */
 /* Font
 -----------------------------------------------------------------------------------------------------------*/
+.in, .out {
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 350ms !important;
+}
 html {
 	font-size: 100%;
 }
