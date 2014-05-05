@@ -34,6 +34,19 @@
 	<li><a href="fourexampletwo"rel="external">Example Two: Strings</a></li>
 	<li><a href="sectionfourquiz.html" rel="external">Multiple Choice Quiz: Strings</a></li>
 	</ul>
+	<br>
+	<h2>Examples</h2>
+	<ul data-role="listview">
+   <li><a href="oneexampleone.html" rel="external">Section One: Examples</a></li>
+	<li><a href="twoexampleone.html" rel="external">Section Two: Example One</a></li>
+	<li><a href="twoexampletwo.html"rel="external">Section Two: Example Two</a></li>
+	<li><a href="threeexampleone.html"rel="external">Section Three: Example One</a></li>
+	<li><a href="threeexampletwo.html"rel="external">Section Three: Example Two</a></li>
+	<li><a href="fourexampleone.html"rel="external">Section Four: Example One</a></li>
+	<li><a href="fourexampletwo.html"rel="external">Section Four: Example Two</a></li>
+	<li><a href="fiveexampleone.html"rel="external">Section Five: Example One</a></li>
+	<li><a href="sixexampleone.html"rel="external">Section Six: Example One</a></li>
+		</ul>
   </div>
   <div data-role="header">
   
@@ -48,12 +61,12 @@
   </div>
   <div data-role="main" class="ui-content">
     <div id="wrapper">
-        <h1>Try it here</h1>
+        <h3>Example One: Shows examples of the various methods of string manipulation in action</h3>
         <form id="code" action="#" method="post">
                
 			<div>
                 <label for="source">Source Code:</label>
-                <textarea cols="40" rows="10" name="source" id="source">import java.lang.*;&#13;&#10;class TryMe{&#13;&#10;public static void main(String args[]){&#13;&#10;System.out.println("This is awesome");&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
+                <textarea cols="40" rows="10" name="source" id="source">//This example shows string manipulation&#13;&#10;import java.lang.*;&#13;&#10;class StringExample{&#13;&#10;public static void main(String args[]){&#13;&#10;String s1 = "Computer Science";&#13;&#10;int x = 307;&#13;&#10;String s2= s1 + " " + x;&#13;&#10;String s2 = s2.substring(10,17);&#13;&#10;String s4 = "is fun";&#13;&#10;String s5 = s2 + s4;&#13;&#10;System.out.println("s1: " + s1);&#13;&#10;System.out.println("s2: " + s2);&#13;&#10;System.out.println("s3: " + s3);&#13;&#10;System.out.println("s4: " + s4);&#13;&#10;System.out.println("s5: " + s5);&#13;&#10;}&#13;&#10;}&#13;&#10;</textarea>
             </div>
             
             <div>
@@ -72,7 +85,7 @@
             <div class="output"></div>
         </div>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="script.js"></script>
+
   </div>
 <div data-role="footer"data-position="fixed">
  <div data-role="navbar">

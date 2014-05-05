@@ -37,9 +37,9 @@ compliments[3]="Good work!"
 /*Below lists the questions, its choices, and finally, the solution to each question. */
 
 
-question[1]="class array_output{\r\npublic static void main(String args[])\r\n{\r\nint array_variable [] = new int[10];\r\nfor (int i = 0; i < 10; ++i) {\r\narray_variable[i] = i/2;\r\narray_variable[i]++;\r\nSystem.out.print(array_variable[i]);\r\ni++;\r\n}\r\n}\r\n}"
-
-solution[1]="0 1 2 3 4"
+question[1]="import java.lang.*;\r\nimport java.util.Scanner;\r\n\r\nclass Userinput{\r\noublic static void main(String[] args){\r\nString number, inter, op, remaining; // Create Strings\r\nScanner scan = new Scanner( System.in ); // Create a scanner\r\nSystem.out.print( \"Enter an Irish mobile phone number \"); \r\nnumber = scan.nextLine(); // Read in number\r\nwhile(number.length()!= 12) // Check if number is not of length 12\r\n\r\nSystem.out.print( \"Enter an Irish mobile phone number:\" );\r\nnumber = scan.nextLine();\r\nSystem.out.println(\"You entered \" + number);\r\nenter = number.substring(0,3);\r\nSystem.out.println(\"The international code is \" + inter);\r\nop = number.substring(3,5);\r\nSystem.out.println(\"The operator code is \" + op);\r\nremaining = number.substring(5);\r\nSystem.out.println(\"The number is \" + remaining );\r\nSystem.out.println(\"The complete number is (\" + inter + \") \" + op + \" \" + remaining);\r\n}\r\n}\r\n"
+            
+solution[1]="4"
 
 
 </script>
@@ -50,19 +50,19 @@ solution[1]="0 1 2 3 4"
 
 
 
-<div data-role="page" id="outputtwo">
+<div data-role="page" id="errorquizone">
  <div data-role="panel" id="myPanel" data-swipe-close="false"data-display="overlay" > 
     <h2>Quiz Listings</h2>
    <ul data-role="listview">
-   <li><a href="index.html#outputone" rel="external">Quiz One</a></li>
-	<li><a href="#outputtwo">Quiz Two</a></li>
-	 <li><a href="#outputthree">Quiz Three</a></li>
-	<li><a href="#outputfour">Quiz Four</a></li>
+   <li><a href="errorquizone.html" rel="external">Quiz One</a></li>
+	<li><a href="errorquiztwo.html" rel="external">Quiz Two</a></li>
+	 <li><a href="errorquizthree.html" rel="external">Quiz Three</a></li>
+	<li><a href="errorquizfour.html" rel="external">Quiz Four</a></li>
 	
 	</ul>
   </div>
   <div data-role="header">
-    <h1>What is the output of this code?</h1>
+    <h1>How many errors are in this code?</h1>
 	<div data-role="navbar" data-iconpos="top">
       <ul>
         <li><a href="#myPanel" data-icon="bars">Navigation</a></li>
@@ -71,7 +71,7 @@ solution[1]="0 1 2 3 4"
     </div>
   </div>
   <div data-role="main" class="ui-content">
-  <p align="center" >Below you'll find a snippet of code, choose from the options underneath what you think the output should be
+  <p align="center" >Below you'll find a snippet of code with errors in the code, it's up to you to find the errors in the code. The real working code can be found in the example section.
  </p>
 	 
   
@@ -91,10 +91,10 @@ solution[1]="0 1 2 3 4"
           <td width="100%"><div align="center"><center><p><strong>Your Answer:</strong><select
           name="theresponse" size="1" onChange="responses()">
             <option value="">Choose</option>
-            <option value="0 1 2 3 4">0 1 2 3 4</option>
-            <option value="0 2 4 6 8">0 2 4 6 8</option>
-            <option value="0 1 2 3 4 5 6 7 8 9">0 1 2 3 4 5 6 7 8 9</option>
-            <option value="1 2 3 4 5 6 7 8 9 10">1 2 3 4 5 6 7 8 9 10</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
           
         </tr>
@@ -142,7 +142,7 @@ generatequestions()
 <div data-role="navbar">
       <ul>
         <li><a href="index.html#outputone" rel="external" data-transition="slide" data-icon="arrow-l">Back </a></li>
-        <li> <a href="outputquizthree.html" rel="external" data-transition="slide" data-icon="arrow-r">Next Question</a></li>
+        <li> <a href="errorquiztwo.html" rel="external" data-transition="slide" data-icon="arrow-r">Next Question</a></li>
       </ul>
     </div>
   </div>

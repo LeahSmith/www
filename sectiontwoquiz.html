@@ -14,14 +14,15 @@
 <style>
             body {
                       background:#d3d3d3;
+					  margin: 0px;
                         }
             #ccontainer{
-                        width:300px;
+                        width:500px;
                         
                         margin:30px 0px 15px 0px;
                          }
             #myCanvas {
-                      background:#d3d3d3;
+                      //background:#d3d3d3;
             }
 .mheader{
  padding:10px;
@@ -68,11 +69,11 @@ color:#9ab9cf;
                       var textpos2=145;
                       var textpos3=230;
                       var textpos4=325;
-                      var Questions = ["Variables must be declared before they can be used","The name of a variable is known as its:","Which is not a valid variable name?","In Java, 5/2 =","In Java, the % refers to?","In Java, 12%5 =","Data type that contain decimal numbers is..","Which is a valid boolean variable?"];
+                      var Questions = ["Variables must be declared before use","The name of a variable is known as its:","Which is not a valid variable name?","In Java, 5/2 =","In Java, the % refers to?","In Java, 12%5 =","Data type that contain decimal numbers is..","Which is a valid boolean variable?"];
                       var Options = [["True","False","Doesn't matter"] , ["identifier","data type","constant"] , ["8num","num8","a"] , ["2","2.5","3"], ["modulus operator","division","percentages"], ["2","1","3"], ["double","char","int"], ["boolean b1=false;","boolean b1='false';","boolean b1=0;"]];
 
         quizbg.onload = function(){
-                        context.drawImage(quizbg, 0, 0);
+                        
                         SetQuestions();
         }//quizbg
         quizbg.src = "quizbg.png";
@@ -85,13 +86,13 @@ if(CorrectAnswer==1){Option1=Options[qnumber][0];Option2=Options[qnumber][1];Opt
 if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Option3=Options[qnumber][0];}
 
                       context.textBaseline = "middle";
-                      context.font = "16pt Arial ";
+                      context.font = "12pt Arial ";
 					  context.fillStyle = '#5C5C5C';
-                      context.fillText(Question,20,textpos1);
-                      context.font = "16pt Arial";
-                      context.fillText(Option1,20,textpos2);
-                      context.fillText(Option2,20,textpos3);
-                      context.fillText(Option3,20,textpos4);
+                      context.fillText(Question,0,textpos1);
+                      context.font = "12pt Arial";
+                      context.fillText(Option1,0,textpos2);
+                      context.fillText(Option2,0,textpos3);
+                      context.fillText(Option3,0,textpos4);
       }//SetQuestions
 
       canvas.addEventListener('click',ProcessClick,false);
@@ -114,35 +115,33 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
 
       GetFeedback = function(a){
                       if(a==CorrectAnswer){
-                              context.drawImage(quizbg, 0,400,75,70,250,110+(90*(a-1)),75,70);
-                              rightanswers++;
+                        rightanswers++;
                                      
                         }
                         else{
-                              context.drawImage(quizbg, 75,400,75,70,250,110+(90*(a-1)),75,70);
-                              wronganswers++;
+                        wronganswers++;
                         }
                         lock=true;
-                        context.font = "14pt Arial";
-                        context.fillText("Click again to continue",20,380);
+                        context.font = "12pt Arial";
+                        context.fillText("Click again to continue",0,380);
       }//get feedback
 
       ResetQ= function(){
                       lock=false;
-                      context.clearRect(0,0,300,400);
+                      context.clearRect(0,0,400,400);
                       qnumber++;
                       if(qnumber==Questions.length){EndQuiz();}
                       else{
-                            context.drawImage(quizbg, 0, 0);
+                            
                             SetQuestions();}
                       }
 
       EndQuiz=function(){
                       canvas.removeEventListener('click',ProcessClick,false);
-                      context.drawImage(quizbg, 0,0,550,90,0,0,550,400);
-                      context.font = "20pt Arial";
+                     
+                      context.font = "14pt Arial";
                       context.fillText("You have finished the quiz!",20,100);
-                      context.font = "16pt Arial";
+                      context.font = "12pt Arial";
                       context.fillText("Correct answers: "+String(rightanswers),20,200);
                       context.fillText("Wrong answers: "+String(wronganswers),20,240);
                       }

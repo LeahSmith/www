@@ -16,14 +16,14 @@
                       background:#d3d3d3;
                         }
             #ccontainer{
-                        width:350px;
+                        width:500px;
 						margin-left: 0;
 						margin-top: 20;
                         
                         
                          }
             #myCanvas {
-                      background:#d3d3d3;
+                     
             }
 .mheader{
  padding:10px;
@@ -74,7 +74,7 @@ color:#9ab9cf;
                       var Options = [["The JVM","The Assembler","The CPU"] , ["Object Orientented Programming","Object Observed Procedures","Observable Object Programming"] , ["8","16","1"] , ["NOT","OR","AND"], ["Byte code is executed by CPU","Java is high level programming language","javac is compiler"], ["Procedural","Robust","Multithreaded"]];
 
         quizbg.onload = function(){
-                        context.drawImage(quizbg, 0, 0);
+                        
                         SetQuestions();
         }//quizbg
         quizbg.src = "quizbg.png";
@@ -87,13 +87,13 @@ if(CorrectAnswer==1){Option1=Options[qnumber][0];Option2=Options[qnumber][1];Opt
 if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Option3=Options[qnumber][0];}
 
                       context.textBaseline = "middle";
-                      context.font = "14pt Arial ";
+                      context.font = "12pt Arial ";
 					  context.fillStyle = '#5C5C5C';
-                      context.fillText(Question,20,textpos1);
+                      context.fillText(Question,0,textpos1);
                       context.font = "12pt Arial";
-                      context.fillText(Option1,20,textpos2);
-                      context.fillText(Option2,20,textpos3);
-                      context.fillText(Option3,20,textpos4);
+                      context.fillText(Option1,0,textpos2);
+                      context.fillText(Option2,0,textpos3);
+                      context.fillText(Option3,0,textpos4);
       }//SetQuestions
 
       canvas.addEventListener('click',ProcessClick,false);
@@ -116,17 +116,16 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
 
       GetFeedback = function(a){
                       if(a==CorrectAnswer){
-                              context.drawImage(quizbg, 0,400,75,70,250,110+(90*(a-1)),75,70);
                               rightanswers++;
                                      
                         }
                         else{
-                              context.drawImage(quizbg, 75,400,75,70,250,110+(90*(a-1)),75,70);
+                              
                               wronganswers++;
                         }
                         lock=true;
                         context.font = "12pt Arial";
-                        context.fillText("Click again to continue",20,380);
+                        context.fillText("Click again to continue",0,380);
       }//get feedback
 
       ResetQ= function(){
@@ -135,13 +134,13 @@ if(CorrectAnswer==3){Option1=Options[qnumber][1];Option2=Options[qnumber][2];Opt
                       qnumber++;
                       if(qnumber==Questions.length){EndQuiz();}
                       else{
-                            context.drawImage(quizbg, 0, 0);
+                            
                             SetQuestions();}
                       }
 
       EndQuiz=function(){
                       canvas.removeEventListener('click',ProcessClick,false);
-                      context.drawImage(quizbg, 0,0,550,90,0,0,550,400);
+                      
                       context.font = "14pt Arial";
                       context.fillText("You have finished the quiz!",20,100);
                       context.font = "12pt Arial";
